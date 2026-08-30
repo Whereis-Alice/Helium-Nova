@@ -1,5 +1,12 @@
 ﻿AddonId: 9c003378-5914-4a67-aa61-469eff798337
 Packages:
+  - Version: 1.2.1
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2026-08-30
+    PackageUrl: https://github.com/Whereis-Alice/Helium-Nova/releases/download/1.2.1/9c003378-5914-4a67-aa61-469eff798337_1_2_1.pthm
+    Changelog:
+      - Fixed DetailsViewCoverCornerRadius, which Helium declared but never applied, so the Details view cover stayed square under every rounding preset
+      - The cover bitmap is now clipped by an opacity mask and its drop shadow follows the same radius
   - Version: 1.2.0
     RequiredApiVersion: 2.8.0
     ReleaseDate: 2026-08-30

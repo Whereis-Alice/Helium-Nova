@@ -67,6 +67,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - 主题 Id / 名称 / 作者 / 仓库链接全部换新，可与原版 Helium 并存安装，互不覆盖。
 - `Constants.xaml` 里补注释说明 `ControlCornerRadiusValue` 因为经由 `StaticResource` 传递而无法热更新，改为暴露它派生出的各个 `CornerRadius` 键。
 - 不再暴露上游已无任何引用的死常量（如 `SidebarItemPadding`）。
+- 修掉上游一个真正的死键：`DetailsViewCoverCornerRadius` 在 `Constants.xaml` 里定义了（默认 5），但整套 xaml 里没有任何地方引用它，于是详情页封面在任何圆角预设下都保持直角。现在封面用 `OpacityMask` 做真实裁切（WPF 的 `Border.CornerRadius` 不会裁剪子元素），投影边框也跟着同一半径。
 - 全部 108 个 xaml、155 个变量 key、264 组双语本地化串、18 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
 
 ---

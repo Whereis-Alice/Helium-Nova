@@ -552,7 +552,8 @@
                                                                     </Style.Triggers>
                                                                 </Style>
                                                             </Grid.Style>
-                                                            <Border BorderThickness="8" BorderBrush="Black">
+                                                            <Border BorderThickness="8" BorderBrush="Black"
+                                                                    CornerRadius="{DynamicResource DetailsViewCoverCornerRadius}">
                                                                 <Border.CacheMode>
                                                                     <BitmapCache EnableClearType="False"
                                                                                  SnapsToDevicePixels="False" />
@@ -565,7 +566,20 @@
                                                             <Image Name="PART_ImageCover" VerticalAlignment="Bottom"
                                                                    Height="{Binding ElementName=ContainerHeightBorder, Path=ActualHeight}"
                                                                    StretchDirection="Both" Stretch="Uniform"
-                                                                   RenderOptions.BitmapScalingMode="Fant" />
+                                                                   RenderOptions.BitmapScalingMode="Fant">
+                                                                <!-- Border.CornerRadius does not clip children in WPF, so the rounded shape has to be
+                                                                     applied to the bitmap through an OpacityMask that tracks the rendered image size. -->
+                                                                <Image.OpacityMask>
+                                                                    <VisualBrush>
+                                                                        <VisualBrush.Visual>
+                                                                            <Border Background="White"
+                                                                                    CornerRadius="{DynamicResource DetailsViewCoverCornerRadius}"
+                                                                                    Width="{Binding ElementName=PART_ImageCover, Path=ActualWidth}"
+                                                                                    Height="{Binding ElementName=PART_ImageCover, Path=ActualHeight}" />
+                                                                        </VisualBrush.Visual>
+                                                                    </VisualBrush>
+                                                                </Image.OpacityMask>
+                                                            </Image>
                                                         </Grid>
                                                         
                                                         <ContentControl x:Name="BackgroundChanger_PluginCoverImage"
