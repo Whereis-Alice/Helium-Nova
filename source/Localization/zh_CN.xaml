@@ -6,6 +6,9 @@
     <sys:String x:Key="LOCHNDescControlBackgroundColorDark">文本框、下拉框、滑块等输入控件共用，含 Alpha 通道。</sys:String>
     <sys:String x:Key="LOCHNDescControlCornerRadius">按钮、输入框及大部分面板。可填 1 个值或 4 个值（左上、右上、右下、左下）。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewAllowUseOfLogos">需要 Extra Metadata Loader 提供 Logo 图片。</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundBlurOpacity">页面内容下方那层模糊背景的不透明度。</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundImageOpacity">让游戏背景图向深色底板淡出，数值越低信息面板越清晰易读。</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundOverlayBrush">覆盖在背景图之上的颜色。填带透明度的值（如 #66000000）可压暗背景，也可以染成强调色。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewDescriptionWidth">简介栏的像素宽度。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewEnablePanelsDropShadowEffect">为面板添加投影，会略微增加 GPU 负担。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewMusicControlVisibility">标题按钮旁的内嵌音乐播放器，需要 Playnite Sounds 扩展。</sys:String>
@@ -57,7 +60,10 @@
     <sys:String x:Key="LOCHNOptControlCornerRadiusSmall">控件圆角 · 小</sys:String>
     <sys:String x:Key="LOCHNOptDataChangeNotifColor">未保存变更标记</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewAllowUseOfLogos">使用游戏 Logo</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundBlurOpacity">背景模糊强度</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBackgroundHorizontalAlignment">背景水平对齐</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundImageOpacity">背景图不透明度</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundOverlayBrush">背景蒙版颜色</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBackgroundVerticalAlignment">背景垂直对齐</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBannerPanelBackgroundBrush">横幅面板背景</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBannerPanelBorderBrush">横幅面板边框</sys:String>
@@ -209,6 +215,10 @@
     <sys:String x:Key="LOCHNPresetAccentRose">樱粉</sys:String>
     <sys:String x:Key="LOCHNPresetAccentSlate">石墨灰</sys:String>
     <sys:String x:Key="LOCHNPresetAccentViolet">紫罗兰</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdrop">背景压暗</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropHeavy">重度</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropMedium">中度</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropSoft">轻度</sys:String>
     <sys:String x:Key="LOCHNPresetBackground">窗口背景</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundForest">森绿</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundGraphite">石墨</sys:String>
@@ -225,6 +235,7 @@
     <sys:String x:Key="LOCHNPresetDensityRelaxed">宽松</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">触屏友好</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">一键重新配色：图标、高亮、渐变按钮、进度条、菜单悬停、封面占位与窗口边框。</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackdrop">压暗详情页的游戏背景图，让信息面板在明亮封面上依然清晰可读。</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">替换窗口背景渐变。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">将渐变按钮替换为纯色按钮。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">所有按钮（含开始按钮）都使用强调色。</sys:String>

@@ -267,6 +267,38 @@ Variables:
     Title: 'Show HowLongToBeat grid'
     LocKey: LOCHNOptDetailsViewShowHltbDataGrid
     Group: detailsView
+  DetailsViewBackgroundImageOpacity:
+    Type: Double
+    Default: '1.0'
+    Title: 'Background artwork opacity'
+    LocKey: LOCHNOptDetailsViewBackgroundImageOpacity
+    Description: 'Fades the game background artwork towards the dark backdrop. Lower values make the info panels easier to read.'
+    DescriptionLocKey: LOCHNDescDetailsViewBackgroundImageOpacity
+    Group: detailsView
+    Slider:
+      Min: '0'
+      Max: '1'
+      Step: '0.05'
+  DetailsViewBackgroundBlurOpacity:
+    Type: Double
+    Default: '0.25'
+    Title: 'Background blur strength'
+    LocKey: LOCHNOptDetailsViewBackgroundBlurOpacity
+    Description: 'Opacity of the blurred artwork bleeding down behind the page content.'
+    DescriptionLocKey: LOCHNDescDetailsViewBackgroundBlurOpacity
+    Group: detailsView
+    Slider:
+      Min: '0'
+      Max: '1'
+      Step: '0.05'
+  DetailsViewBackgroundOverlayBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Background tint overlay'
+    LocKey: LOCHNOptDetailsViewBackgroundOverlayBrush
+    Description: 'Colour painted over the artwork. Use an alpha value such as #66000000 to dim it, or tint it towards the accent colour.'
+    DescriptionLocKey: LOCHNDescDetailsViewBackgroundOverlayBrush
+    Group: detailsView
   DetailsViewEnablePanelsDropShadowEffect:
     Type: Boolean
     Default: 'False'
@@ -1320,6 +1352,51 @@ Presets:
         LocKey: LOCHNPresetBackgroundForest
         Files:
           - 'Presets/Background/Forest.xaml'
+  Backdrop:
+    Name: 'Background dimming'
+    LocKey: LOCHNPresetBackdrop
+    Description: 'Dims the Details view artwork so the info panels stay readable over bright covers.'
+    DescriptionLocKey: LOCHNPresetDescBackdrop
+    Presets:
+      Soft:
+        Name: 'Soft'
+        LocKey: LOCHNPresetBackdropSoft
+        Constants:
+          DetailsViewBackgroundOverlayBrush:
+            Type: SolidColorBrush
+            Value: '#40000000'
+          DetailsViewBackgroundImageOpacity:
+            Type: Double
+            Value: '1.0'
+          DetailsViewBackgroundBlurOpacity:
+            Type: Double
+            Value: '0.25'
+      Medium:
+        Name: 'Medium'
+        LocKey: LOCHNPresetBackdropMedium
+        Constants:
+          DetailsViewBackgroundOverlayBrush:
+            Type: SolidColorBrush
+            Value: '#73000000'
+          DetailsViewBackgroundImageOpacity:
+            Type: Double
+            Value: '0.90'
+          DetailsViewBackgroundBlurOpacity:
+            Type: Double
+            Value: '0.22'
+      Heavy:
+        Name: 'Heavy'
+        LocKey: LOCHNPresetBackdropHeavy
+        Constants:
+          DetailsViewBackgroundOverlayBrush:
+            Type: SolidColorBrush
+            Value: '#A6000000'
+          DetailsViewBackgroundImageOpacity:
+            Type: Double
+            Value: '0.78'
+          DetailsViewBackgroundBlurOpacity:
+            Type: Double
+            Value: '0.18'
   Buttons:
     Name: 'Button style'
     LocKey: LOCHNPresetButtons

@@ -6,6 +6,9 @@
     <sys:String x:Key="LOCHNDescControlBackgroundColorDark">Shared by text boxes, combo boxes, sliders and similar inputs. Includes alpha.</sys:String>
     <sys:String x:Key="LOCHNDescControlCornerRadius">Buttons, inputs and most panels. Accepts one value or four (top-left, top-right, bottom-right, bottom-left).</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewAllowUseOfLogos">Requires Extra Metadata Loader to supply logo images.</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundBlurOpacity">Opacity of the blurred artwork bleeding down behind the page content.</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundImageOpacity">Fades the game background artwork towards the dark backdrop. Lower values make the info panels easier to read.</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewBackgroundOverlayBrush">Colour painted over the artwork. Use an alpha value such as #66000000 to dim it, or tint it towards the accent colour.</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewDescriptionWidth">Width of the description column in pixels.</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewEnablePanelsDropShadowEffect">Adds a shadow behind panels. Slightly more GPU intensive.</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewMusicControlVisibility">Inline music player next to the header buttons. Requires the Playnite Sounds extension.</sys:String>
@@ -57,7 +60,10 @@
     <sys:String x:Key="LOCHNOptControlCornerRadiusSmall">Control corner radius - small</sys:String>
     <sys:String x:Key="LOCHNOptDataChangeNotifColor">Unsaved change marker</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewAllowUseOfLogos">Use game logos</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundBlurOpacity">Background blur strength</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBackgroundHorizontalAlignment">Background horizontal alignment</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundImageOpacity">Background artwork opacity</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewBackgroundOverlayBrush">Background tint overlay</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBackgroundVerticalAlignment">Background vertical alignment</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBannerPanelBackgroundBrush">Banner panel background</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewBannerPanelBorderBrush">Banner panel border</sys:String>
@@ -209,6 +215,10 @@
     <sys:String x:Key="LOCHNPresetAccentRose">Rose</sys:String>
     <sys:String x:Key="LOCHNPresetAccentSlate">Slate</sys:String>
     <sys:String x:Key="LOCHNPresetAccentViolet">Violet</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdrop">Background dimming</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropHeavy">Heavy</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropMedium">Medium</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropSoft">Soft</sys:String>
     <sys:String x:Key="LOCHNPresetBackground">Window background</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundForest">Forest</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundGraphite">Graphite</sys:String>
@@ -225,6 +235,7 @@
     <sys:String x:Key="LOCHNPresetDensityRelaxed">Relaxed</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">Touch friendly</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">Recolours glyphs, highlights, gradient buttons, progress bars, menu hover, cover placeholders and the window border in one click.</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackdrop">Dims the Details view artwork so the info panels stay readable over bright covers.</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">Swaps the window background gradients.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">Replaces the gradient buttons with flat surfaces.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">All buttons use the accent colour, including the play button.</sys:String>

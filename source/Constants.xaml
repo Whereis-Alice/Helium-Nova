@@ -57,6 +57,8 @@
     <sys:String x:Key="MusicSectionHeader">Music</sys:String>
     <sys:Double x:Key="SidebarItemSize">40</sys:Double>
     <sys:Double x:Key="SidebarItemOpacity">0.75</sys:Double>
+    <sys:Double x:Key="DetailsViewBackgroundImageOpacity">1.0</sys:Double>
+    <sys:Double x:Key="DetailsViewBackgroundBlurOpacity">0.25</sys:Double>
     <!--region end-->
     
     <x:Static x:Key="EmptyString" Member="sys:String.Empty" />
@@ -397,6 +399,11 @@
     </LinearGradientBrush>
 
     <SolidColorBrush x:Key="GameInfoContainerBackgroundBrush" Color="#33000000" />
+
+    <!--Tint/dim overlay painted on top of the Details view background artwork.
+    Transparent by default so stock Helium looks unchanged; raise the alpha to make
+    the info panels readable over bright covers.-->
+    <SolidColorBrush x:Key="DetailsViewBackgroundOverlayBrush" Color="Transparent" />
     
     <!--region Details View Backgrounds brushes-->
     <LinearGradientBrush x:Key="DetailsSectionBackgroundBrush" StartPoint="0.5, 1.0" EndPoint="0.5, 0.0" >

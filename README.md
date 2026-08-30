@@ -1,6 +1,6 @@
 # Helium Nova
 
-Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**152 个选项、31 套预设，全部可在设置里带实时预览地调整，中英双语。**
+Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**155 个选项、34 套预设，全部可在设置里带实时预览地调整，中英双语。**
 
 ---
 
@@ -30,13 +30,13 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 
 这些都走 `DynamicResource`，改完立刻生效，不用重启。
 
-### 可调项：12 组 / 152 项
+### 可调项：12 组 / 155 项
 
 | 分组 | 内容 |
 |---|---|
 | 顶栏 | 导航按钮、搜索框宽度等 |
 | 侧边栏 | Logo、按钮尺寸与透明度 |
-| 详情视图 | 描述宽度与停靠、信息面板默认展开、背景图对齐、投影、Logo、HLTB 表格、Web 视图高度 |
+| 详情视图 | 描述宽度与停靠、信息面板默认展开、背景图对齐/不透明度/模糊强度/蒙版颜色、投影、Logo、HLTB 表格、Web 视图高度 |
 | 网格详情 | 描述位置、图标可见性、Logo、HLTB 表格 |
 | 网格封面 | 悬停缩放、副标题与完成状态、高光动画、运行中发光边框、收藏图标、平台横幅、圆角、投影 |
 | 区块排序 | 16 个滑块，把详情 / 视频 / 笔记 / 描述 / VNDB / 成就 / HLTB / 截图 / 活动 / 评测 / 新闻 / DLC / 关联 / Steam 截图 / 网页 / 音乐 排成任意顺序 |
@@ -53,6 +53,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 |---|---|
 | 强调色 | Azure / Cyan / Violet / Magenta / Emerald / Amber / Crimson / Rose / Slate（每套重绘图标、高亮、渐变按钮、进度条、封面占位、菜单悬停、窗口边框与弹窗色调）|
 | 背景 | Nebula / Midnight / Graphite / Ocean / Plum / Forest（渐变背景，含线性与径向） |
+| 背景压暗 | 轻度 / 中度 / 重度（压暗详情页背景图，同时联动模糊强度，明亮封面下也能看清信息面板） |
 | 按钮 | Accent / Flat / Monochrome |
 | 圆角 | Sharp / Rounded / Pill |
 | 字号 | Compact / Large / Huge |
@@ -66,7 +67,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - 主题 Id / 名称 / 作者 / 仓库链接全部换新，可与原版 Helium 并存安装，互不覆盖。
 - `Constants.xaml` 里补注释说明 `ControlCornerRadiusValue` 因为经由 `StaticResource` 传递而无法热更新，改为暴露它派生出的各个 `CornerRadius` 键。
 - 不再暴露上游已无任何引用的死常量（如 `SidebarItemPadding`）。
-- 全部 108 个 xaml、152 个变量 key、253 组双语本地化串、18 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
+- 全部 108 个 xaml、155 个变量 key、264 组双语本地化串、18 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
 
 ---
 
