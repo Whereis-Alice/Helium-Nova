@@ -1,0 +1,44 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Helium Nova - Backdrop preset "Gradient scrim".
+
+    Upstream Helium only dims the Details view header artwork with a flat overlay,
+    and that overlay is clipped to the header height. Everything below it (play row,
+    description, links, custom fields) is drawn straight on top of the blurred
+    backdrop, so bright key visuals wash the text out. This preset fixes the whole
+    column instead of just the header:
+      * the header overlay becomes a vertical gradient, invisible at the top of the
+        artwork and dark where the text starts,
+      * DetailsViewSectionScrimBrush dims the info section below the header,
+      * the blurred backdrop is calmed down and the glass panels are strengthened.-->
+
+    <LinearGradientBrush x:Key="DetailsViewBackgroundOverlayBrush" StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+        <GradientStop Color="#00000000" Offset="0.0"/>
+        <GradientStop Color="#1F000000" Offset="0.35"/>
+        <GradientStop Color="#66000000" Offset="0.72"/>
+        <GradientStop Color="#B3000000" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <sys:Double x:Key="DetailsViewBackgroundImageOpacity">1.0</sys:Double>
+    <sys:Double x:Key="DetailsViewBackgroundBlurOpacity">0.16</sys:Double>
+
+    <SolidColorBrush x:Key="DetailsViewSectionScrimBrush" Color="#B3000000" />
+
+    <LinearGradientBrush x:Key="BackdropGlass2" StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+        <GradientStop Color="#CC272c35" Offset="0.0"/>
+        <GradientStop Color="#59272c35" Offset="0.60"/>
+        <GradientStop Color="#00272c35" Offset="1.0"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="GameInfoContainerBackgroundBrush" Color="#4D000000" />
+
+    <RadialGradientBrush x:Key="LinksContainerBackgroundBrush" Center="0.64, 0.95"
+        RadiusX="1" RadiusY="0.8">
+        <RadialGradientBrush.GradientStops>
+            <GradientStop Color="#4D6c7786" Offset="0.4" />
+            <GradientStop Color="#4D536868" Offset="1.0" />
+        </RadialGradientBrush.GradientStops>
+    </RadialGradientBrush>
+</ResourceDictionary>

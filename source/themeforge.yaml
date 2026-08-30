@@ -293,11 +293,19 @@ Variables:
       Step: '0.05'
   DetailsViewBackgroundOverlayBrush:
     Type: SolidColorBrush
-    Default: 'Transparent'
+    Default: '#33000000'
     Title: 'Background tint overlay'
     LocKey: LOCHNOptDetailsViewBackgroundOverlayBrush
     Description: 'Colour painted over the artwork. Use an alpha value such as #66000000 to dim it, or tint it towards the accent colour.'
     DescriptionLocKey: LOCHNDescDetailsViewBackgroundOverlayBrush
+    Group: detailsView
+  DetailsViewSectionScrimBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Info section scrim'
+    LocKey: LOCHNOptDetailsViewSectionScrimBrush
+    Description: 'Nova addition. Dims everything below the header artwork (play row, description, links, custom fields), which the stock tint overlay never reaches.'
+    DescriptionLocKey: LOCHNDescDetailsViewSectionScrimBrush
     Group: detailsView
   DetailsViewEnablePanelsDropShadowEffect:
     Type: Boolean
@@ -1358,6 +1366,24 @@ Presets:
     Description: 'Dims the Details view artwork so the info panels stay readable over bright covers.'
     DescriptionLocKey: LOCHNPresetDescBackdrop
     Presets:
+      Scrim:
+        Name: 'Gradient scrim'
+        LocKey: LOCHNPresetBackdropScrim
+        Files:
+          - 'Presets/Backdrop/Scrim.xaml'
+      None:
+        Name: 'Off'
+        LocKey: LOCHNPresetBackdropNone
+        Constants:
+          DetailsViewBackgroundOverlayBrush:
+            Type: SolidColorBrush
+            Value: '#00000000'
+          DetailsViewBackgroundImageOpacity:
+            Type: Double
+            Value: '1.0'
+          DetailsViewSectionScrimBrush:
+            Type: SolidColorBrush
+            Value: '#00000000'
       Soft:
         Name: 'Soft'
         LocKey: LOCHNPresetBackdropSoft
@@ -1371,6 +1397,9 @@ Presets:
           DetailsViewBackgroundBlurOpacity:
             Type: Double
             Value: '0.25'
+          DetailsViewSectionScrimBrush:
+            Type: SolidColorBrush
+            Value: '#33000000'
       Medium:
         Name: 'Medium'
         LocKey: LOCHNPresetBackdropMedium
@@ -1384,6 +1413,9 @@ Presets:
           DetailsViewBackgroundBlurOpacity:
             Type: Double
             Value: '0.22'
+          DetailsViewSectionScrimBrush:
+            Type: SolidColorBrush
+            Value: '#59000000'
       Heavy:
         Name: 'Heavy'
         LocKey: LOCHNPresetBackdropHeavy
@@ -1397,6 +1429,9 @@ Presets:
           DetailsViewBackgroundBlurOpacity:
             Type: Double
             Value: '0.18'
+          DetailsViewSectionScrimBrush:
+            Type: SolidColorBrush
+            Value: '#8C000000'
   Buttons:
     Name: 'Button style'
     LocKey: LOCHNPresetButtons

@@ -492,6 +492,7 @@
 
                                 <Grid Name="GameDetailsSection" Grid.Row="1">
                                     <Grid>
+                                        <Border Background="{DynamicResource DetailsViewSectionScrimBrush}" IsHitTestVisible="False"/>
                                         <Border Background="{DynamicResource BackdropGlass2}" Height="380" VerticalAlignment="Top" Margin="0,0,0,0"/>
                                     </Grid>
                                     <Grid Name="DetailsGrid">

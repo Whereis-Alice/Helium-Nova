@@ -1,6 +1,6 @@
 # Helium Nova
 
-Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**155 个选项、34 套预设，全部可在设置里带实时预览地调整，中英双语。**
+Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**155 个选项、36 套预设，全部可在设置里带实时预览地调整，中英双语。**
 
 ---
 
@@ -30,13 +30,13 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 
 这些都走 `DynamicResource`，改完立刻生效，不用重启。
 
-### 可调项：12 组 / 155 项
+### 可调项：12 组 / 156 项
 
 | 分组 | 内容 |
 |---|---|
 | 顶栏 | 导航按钮、搜索框宽度等 |
 | 侧边栏 | Logo、按钮尺寸与透明度 |
-| 详情视图 | 描述宽度与停靠、信息面板默认展开、背景图对齐/不透明度/模糊强度/蒙版颜色、投影、Logo、HLTB 表格、Web 视图高度 |
+| 详情视图 | 描述宽度与停靠、信息面板默认展开、背景图对齐/不透明度/模糊强度/蒙版颜色、信息区压暗、投影、Logo、HLTB 表格、Web 视图高度 |
 | 网格详情 | 描述位置、图标可见性、Logo、HLTB 表格 |
 | 网格封面 | 悬停缩放、副标题与完成状态、高光动画、运行中发光边框、收藏图标、平台横幅、圆角、投影 |
 | 区块排序 | 16 个滑块，把详情 / 视频 / 笔记 / 描述 / VNDB / 成就 / HLTB / 截图 / 活动 / 评测 / 新闻 / DLC / 关联 / Steam 截图 / 网页 / 音乐 排成任意顺序 |
@@ -47,13 +47,13 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 | 形状 | 各级圆角 |
 | 集成 | 各扩展相关区块的显隐 |
 
-### 预设：7 组 / 31 套
+### 预设：8 组 / 36 套
 
 | 预设组 | 选项 |
 |---|---|
 | 强调色 | Azure / Cyan / Violet / Magenta / Emerald / Amber / Crimson / Rose / Slate（每套重绘图标、高亮、渐变按钮、进度条、封面占位、菜单悬停、窗口边框与弹窗色调）|
 | 背景 | Nebula / Midnight / Graphite / Ocean / Plum / Forest（渐变背景，含线性与径向） |
-| 背景压暗 | 轻度 / 中度 / 重度（压暗详情页背景图，同时联动模糊强度，明亮封面下也能看清信息面板） |
+| 背景压暗 | 渐变遮罩 / 关闭 / 轻度 / 中度 / 重度（默认已带轻微压暗；渐变遮罩保留上方主视觉亮度、只压暗下半部分，明亮封面下也能看清信息面板） |
 | 按钮 | Accent / Flat / Monochrome |
 | 圆角 | Sharp / Rounded / Pill |
 | 字号 | Compact / Large / Huge |
@@ -68,7 +68,8 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - `Constants.xaml` 里补注释说明 `ControlCornerRadiusValue` 因为经由 `StaticResource` 传递而无法热更新，改为暴露它派生出的各个 `CornerRadius` 键。
 - 不再暴露上游已无任何引用的死常量（如 `SidebarItemPadding`）。
 - 修掉上游一个真正的死键：`DetailsViewCoverCornerRadius` 在 `Constants.xaml` 里定义了（默认 5），但整套 xaml 里没有任何地方引用它，于是详情页封面在任何圆角预设下都保持直角。现在封面用 `OpacityMask` 做真实裁切（WPF 的 `Border.CornerRadius` 不会裁剪子元素），投影边框也跟着同一半径。
-- 全部 108 个 xaml、155 个变量 key、264 组双语本地化串、18 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
+- 修掉第二个上游显示缺陷：`DetailsViewBackgroundOverlayBrush` 那层压暗只绑定了页头高度（`DetailsTop.ActualHeight`），启动按钮行以下的简介、链接、自定义字段其实什么遮罩都没有，只能直接压在虚化背景图上，明亮主视觉下文字发灰。现在信息区多了一层独立的 `DetailsViewSectionScrimBrush`（默认透明，行为与原版一致），背景压暗预设会连它一起调。
+- 全部 109 个 xaml、156 个变量 key、268 组双语本地化串、19 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
 
 ---
 

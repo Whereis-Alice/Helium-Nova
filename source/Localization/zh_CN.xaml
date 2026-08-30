@@ -12,6 +12,7 @@
     <sys:String x:Key="LOCHNDescDetailsViewDescriptionWidth">简介栏的像素宽度。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewEnablePanelsDropShadowEffect">为面板添加投影，会略微增加 GPU 负担。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewMusicControlVisibility">标题按钮旁的内嵌音乐播放器，需要 Playnite Sounds 扩展。</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewSectionScrimBrush">Nova 新增。压暗主视觉下方的整个信息区（启动按钮行、简介、链接、自定义字段），原版的背景蒙版根本盖不到这里。</sys:String>
     <sys:String x:Key="LOCHNDescFontFamily">可填写系统中已安装的任意字体。中文推荐 Microsoft YaHei UI 或 Noto Sans SC。</sys:String>
     <sys:String x:Key="LOCHNDescFontSizeLargest">用于详情视图中的游戏标题。</sys:String>
     <sys:String x:Key="LOCHNDescGlyphColor">主强调色。大多数图标、焦点框与高亮都由它派生。</sys:String>
@@ -86,6 +87,7 @@
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderButtonsOpacity">标题栏按钮不透明度</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderLabelBrush">标题栏标签颜色</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderTextBlockBrush">标题栏文字颜色</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewSectionScrimBrush">信息区压暗</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewShowHltbDataGrid">显示 HowLongToBeat 表格</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewShowInfoPanelDefault">默认展开信息面板</sys:String>
     <sys:String x:Key="LOCHNOptEllipseBorderThickness">圆形边框粗细</sys:String>
@@ -218,6 +220,8 @@
     <sys:String x:Key="LOCHNPresetBackdrop">背景压暗</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropHeavy">重度</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropMedium">中度</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropNone">关闭</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropScrim">渐变遮罩</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropSoft">轻度</sys:String>
     <sys:String x:Key="LOCHNPresetBackground">窗口背景</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundForest">森绿</sys:String>
@@ -235,7 +239,7 @@
     <sys:String x:Key="LOCHNPresetDensityRelaxed">宽松</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">触屏友好</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">一键重新配色：图标、高亮、渐变按钮、进度条、菜单悬停、封面占位与窗口边框。</sys:String>
-    <sys:String x:Key="LOCHNPresetDescBackdrop">压暗详情页的游戏背景图，让信息面板在明亮封面上依然清晰可读。</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackdrop">压暗详情页的游戏背景图，让信息面板在明亮封面上依然清晰可读。Nova 把压暗范围延伸到主视觉下方：信息区拥有独立遮罩，简介、链接和自定义字段一并覆盖。「渐变遮罩」保留上方主视觉的亮度，向文字方向逐渐加深，同时降低背景虚化的干扰并加强毛玻璃面板。</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">替换窗口背景渐变。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">将渐变按钮替换为纯色按钮。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">所有按钮（含开始按钮）都使用强调色。</sys:String>

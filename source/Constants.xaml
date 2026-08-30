@@ -403,7 +403,12 @@
     <!--Tint/dim overlay painted on top of the Details view background artwork.
     Transparent by default so stock Helium looks unchanged; raise the alpha to make
     the info panels readable over bright covers.-->
-    <SolidColorBrush x:Key="DetailsViewBackgroundOverlayBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="DetailsViewBackgroundOverlayBrush" Color="#33000000" />
+
+    <!--Full-height scrim behind the Details view info section (everything below the
+    header artwork). Transparent by default so stock Helium looks unchanged; the
+    Backdrop presets raise it so description, links and custom fields stay readable.-->
+    <SolidColorBrush x:Key="DetailsViewSectionScrimBrush" Color="Transparent" />
     
     <!--region Details View Backgrounds brushes-->
     <LinearGradientBrush x:Key="DetailsSectionBackgroundBrush" StartPoint="0.5, 1.0" EndPoint="0.5, 0.0" >

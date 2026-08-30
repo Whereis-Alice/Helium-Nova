@@ -12,6 +12,7 @@
     <sys:String x:Key="LOCHNDescDetailsViewDescriptionWidth">Width of the description column in pixels.</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewEnablePanelsDropShadowEffect">Adds a shadow behind panels. Slightly more GPU intensive.</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewMusicControlVisibility">Inline music player next to the header buttons. Requires the Playnite Sounds extension.</sys:String>
+    <sys:String x:Key="LOCHNDescDetailsViewSectionScrimBrush">Nova addition. Dims everything below the header artwork - play row, description, links and custom fields - which the stock tint overlay never reaches.</sys:String>
     <sys:String x:Key="LOCHNDescFontFamily">Any font installed on your system. For Chinese text try Microsoft YaHei UI or Noto Sans SC.</sys:String>
     <sys:String x:Key="LOCHNDescFontSizeLargest">Used for the game title in the Details view.</sys:String>
     <sys:String x:Key="LOCHNDescGlyphColor">The primary accent. Most icons, focus rings and highlights derive from it.</sys:String>
@@ -86,6 +87,7 @@
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderButtonsOpacity">Header button opacity</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderLabelBrush">Header label colour</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewOverviewHeaderTextBlockBrush">Header text colour</sys:String>
+    <sys:String x:Key="LOCHNOptDetailsViewSectionScrimBrush">Info section scrim</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewShowHltbDataGrid">Show HowLongToBeat grid</sys:String>
     <sys:String x:Key="LOCHNOptDetailsViewShowInfoPanelDefault">Show info panel by default</sys:String>
     <sys:String x:Key="LOCHNOptEllipseBorderThickness">Circle border thickness</sys:String>
@@ -218,6 +220,8 @@
     <sys:String x:Key="LOCHNPresetBackdrop">Background dimming</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropHeavy">Heavy</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropMedium">Medium</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropNone">Off</sys:String>
+    <sys:String x:Key="LOCHNPresetBackdropScrim">Gradient scrim</sys:String>
     <sys:String x:Key="LOCHNPresetBackdropSoft">Soft</sys:String>
     <sys:String x:Key="LOCHNPresetBackground">Window background</sys:String>
     <sys:String x:Key="LOCHNPresetBackgroundForest">Forest</sys:String>
@@ -235,7 +239,7 @@
     <sys:String x:Key="LOCHNPresetDensityRelaxed">Relaxed</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">Touch friendly</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">Recolours glyphs, highlights, gradient buttons, progress bars, menu hover, cover placeholders and the window border in one click.</sys:String>
-    <sys:String x:Key="LOCHNPresetDescBackdrop">Dims the Details view artwork so the info panels stay readable over bright covers.</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackdrop">Dims the Details view artwork so the info panels stay readable over bright covers. Nova extends this below the header: the info section gets its own scrim, so the description, links and custom fields are covered too. &quot;Gradient scrim&quot; keeps the key art bright at the top, darkens it towards the text, calms the blurred backdrop and strengthens the glass panels.</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">Swaps the window background gradients.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">Replaces the gradient buttons with flat surfaces.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">All buttons use the accent colour, including the play button.</sys:String>

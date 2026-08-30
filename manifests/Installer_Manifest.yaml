@@ -1,5 +1,15 @@
 ﻿AddonId: 9c003378-5914-4a67-aa61-469eff798337
 Packages:
+  - Version: 1.2.2
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2026-08-30
+    PackageUrl: https://github.com/Whereis-Alice/Helium-Nova/releases/download/1.2.2/9c003378-5914-4a67-aa61-469eff798337_1_2_2.pthm
+    Changelog:
+      - The Details view artwork is now dimmed slightly out of the box, so descriptions, notes and link buttons stay readable over bright key art
+      - Fixed a second upstream gap: the tint overlay was clipped to the header height, so the play row, description, links and custom fields below it were never dimmed at all
+      - New DetailsViewSectionScrimBrush option dims the info section below the header artwork; transparent by default so the stock look is unchanged
+      - New Gradient scrim backdrop preset fades the artwork from bright at the top to dark where the text starts, calms the blurred backdrop and strengthens the glass panels
+      - New Off backdrop preset restores the original undimmed Helium look
   - Version: 1.2.1
     RequiredApiVersion: 2.8.0
     ReleaseDate: 2026-08-30
