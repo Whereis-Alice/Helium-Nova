@@ -1,0 +1,1737 @@
+# Helium Nova - Theme Forge option schema
+# Generated: keep in sync with Constants.xaml. Every Title/Description below is an
+# English fallback; the localized text lives in Localization/<lang>.xaml.
+
+Groups:
+  - Id: topPanel
+    Title: 'Top panel'
+    LocKey: LOCHNGroupTopPanel
+    Description: 'Search box, navigation buttons and top panel appearance.'
+    DescriptionLocKey: LOCHNGroupDescTopPanel
+    Order: 10
+  - Id: sidebar
+    Title: 'Sidebar'
+    LocKey: LOCHNGroupSidebar
+    Description: 'Sidebar logo and item sizing.'
+    DescriptionLocKey: LOCHNGroupDescSidebar
+    Order: 20
+  - Id: detailsView
+    Title: 'Details view'
+    LocKey: LOCHNGroupDetailsView
+    Description: 'Layout of the Details view game page.'
+    DescriptionLocKey: LOCHNGroupDescDetailsView
+    Order: 30
+  - Id: gridDetails
+    Title: 'Grid view - details'
+    LocKey: LOCHNGroupGridDetails
+    Description: 'The details panel shown next to the grid.'
+    DescriptionLocKey: LOCHNGroupDescGridDetails
+    Order: 40
+  - Id: gridCovers
+    Title: 'Grid view - covers'
+    LocKey: LOCHNGroupGridCovers
+    Description: 'Cover items inside the grid.'
+    DescriptionLocKey: LOCHNGroupDescGridCovers
+    Order: 50
+  - Id: sectionOrder
+    Title: 'Grid view - section order'
+    LocKey: LOCHNGroupSectionOrder
+    Description: 'Reorder the sections of the grid details panel. Lower numbers appear first.'
+    DescriptionLocKey: LOCHNGroupDescSectionOrder
+    Order: 60
+  - Id: typography
+    Title: 'Typography'
+    LocKey: LOCHNGroupTypography
+    Description: 'Fonts and font sizes.'
+    DescriptionLocKey: LOCHNGroupDescTypography
+    Order: 70
+  - Id: palette
+    Title: 'Colours'
+    LocKey: LOCHNGroupPalette
+    Description: 'Core colours the whole theme derives from.'
+    DescriptionLocKey: LOCHNGroupDescPalette
+    Order: 80
+  - Id: controls
+    Title: 'Controls & panels'
+    LocKey: LOCHNGroupControls
+    Description: 'Buttons, inputs, popups and panel surfaces.'
+    DescriptionLocKey: LOCHNGroupDescControls
+    Order: 90
+  - Id: status
+    Title: 'Status & ratings'
+    LocKey: LOCHNGroupStatus
+    Description: 'Colours used for install state, ratings and warnings.'
+    DescriptionLocKey: LOCHNGroupDescStatus
+    Order: 100
+  - Id: shape
+    Title: 'Shape & spacing'
+    LocKey: LOCHNGroupShape
+    Description: 'Corner radii and border thickness.'
+    DescriptionLocKey: LOCHNGroupDescShape
+    Order: 110
+  - Id: integrations
+    Title: 'Extension integrations'
+    LocKey: LOCHNGroupIntegrations
+    Description: 'Sections contributed by other extensions.'
+    DescriptionLocKey: LOCHNGroupDescIntegrations
+    Order: 120
+
+Variables:
+  ShowNavigationButtons:
+    Type: Boolean
+    Default: 'True'
+    Title: 'Show navigation buttons'
+    LocKey: LOCHNOptShowNavigationButtons
+    Description: 'Back and forward buttons in the top panel.'
+    DescriptionLocKey: LOCHNDescShowNavigationButtons
+    Group: topPanel
+  TopPanelSearchBoxWidthHelium:
+    Type: Double
+    Default: '500'
+    Title: 'Search box width'
+    LocKey: LOCHNOptTopPanelSearchBoxWidthHelium
+    Description: 'Width of the search box in pixels.'
+    DescriptionLocKey: LOCHNDescTopPanelSearchBoxWidthHelium
+    Group: topPanel
+    Slider:
+      Min: '80'
+      Max: '1200'
+      Step: '10'
+  TopPanelBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#171d25'
+    Title: 'Top panel background'
+    LocKey: LOCHNOptTopPanelBackgroundBrush
+    Group: topPanel
+  TopPanelSearchBoxBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#292c33'
+    Title: 'Search box background'
+    LocKey: LOCHNOptTopPanelSearchBoxBackgroundBrush
+    Group: topPanel
+  TopPanelItemForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#8f969e'
+    Title: 'Top panel icon colour'
+    LocKey: LOCHNOptTopPanelItemForegroundBrush
+    Group: topPanel
+  TopPanelItemIsMouseOverForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#ffffff'
+    Title: 'Top panel icon colour (hover)'
+    LocKey: LOCHNOptTopPanelItemIsMouseOverForegroundBrush
+    Group: topPanel
+  SidebarLogoVisibility:
+    Type: Visibility
+    Default: 'Visible'
+    Title: 'Main menu logo'
+    LocKey: LOCHNOptSidebarLogoVisibility
+    Description: 'The Playnite logo button that opens the main menu.'
+    DescriptionLocKey: LOCHNDescSidebarLogoVisibility
+    Group: sidebar
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  SidebarLogoSize:
+    Type: Double
+    Default: '38'
+    Title: 'Main menu logo size'
+    LocKey: LOCHNOptSidebarLogoSize
+    Group: sidebar
+    Slider:
+      Min: '24'
+      Max: '72'
+      Step: '1'
+  SidebarItemSize:
+    Type: Double
+    Default: '40'
+    Title: 'Sidebar item size'
+    LocKey: LOCHNOptSidebarItemSize
+    Description: 'Width and height of each sidebar button.'
+    DescriptionLocKey: LOCHNDescSidebarItemSize
+    Group: sidebar
+    Slider:
+      Min: '28'
+      Max: '72'
+      Step: '1'
+  SidebarItemOpacity:
+    Type: Double
+    Default: '0.75'
+    Title: 'Sidebar item opacity'
+    LocKey: LOCHNOptSidebarItemOpacity
+    Description: 'Opacity of sidebar buttons that are neither hovered nor selected.'
+    DescriptionLocKey: LOCHNDescSidebarItemOpacity
+    Group: sidebar
+    Slider:
+      Min: '0.2'
+      Max: '1'
+      Step: '0.05'
+  SidebarItemIsMouseOverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Sidebar item background (hover)'
+    LocKey: LOCHNOptSidebarItemIsMouseOverBackgroundBrush
+    Group: sidebar
+  SidebarItemIsSelectedBackgroundBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Sidebar item background (selected)'
+    LocKey: LOCHNOptSidebarItemIsSelectedBackgroundBrush
+    Group: sidebar
+  DetailsViewDescriptionWidth:
+    Type: Double
+    Default: '300'
+    Title: 'Description column width'
+    LocKey: LOCHNOptDetailsViewDescriptionWidth
+    Description: 'Width of the description column in pixels.'
+    DescriptionLocKey: LOCHNDescDetailsViewDescriptionWidth
+    Group: detailsView
+    Slider:
+      Min: '150'
+      Max: '2400'
+      Step: '10'
+  DetailsViewDescriptionDockToRight:
+    Type: Boolean
+    Default: 'false'
+    Title: 'Dock description to the right'
+    LocKey: LOCHNOptDetailsViewDescriptionDockToRight
+    Group: detailsView
+  DetailsViewShowInfoPanelDefault:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Show info panel by default'
+    LocKey: LOCHNOptDetailsViewShowInfoPanelDefault
+    Group: detailsView
+  DetailsViewBackgroundVerticalAlignment:
+    Type: VerticalAlignment
+    Default: 'Center'
+    Title: 'Background vertical alignment'
+    LocKey: LOCHNOptDetailsViewBackgroundVerticalAlignment
+    Group: detailsView
+    Choices:
+      - Value: 'Top'
+        Title: 'Top'
+        LocKey: LOCHNValTop
+      - Value: 'Center'
+        Title: 'Center'
+        LocKey: LOCHNValCenter
+      - Value: 'Bottom'
+        Title: 'Bottom'
+        LocKey: LOCHNValBottom
+      - Value: 'Stretch'
+        Title: 'Stretch'
+        LocKey: LOCHNValStretch
+  DetailsViewBackgroundHorizontalAlignment:
+    Type: HorizontalAlignment
+    Default: 'Left'
+    Title: 'Background horizontal alignment'
+    LocKey: LOCHNOptDetailsViewBackgroundHorizontalAlignment
+    Group: detailsView
+    Choices:
+      - Value: 'Left'
+        Title: 'Left'
+        LocKey: LOCHNValLeft
+      - Value: 'Center'
+        Title: 'Center'
+        LocKey: LOCHNValCenter
+      - Value: 'Right'
+        Title: 'Right'
+        LocKey: LOCHNValRight
+      - Value: 'Stretch'
+        Title: 'Stretch'
+        LocKey: LOCHNValStretch
+  DetailsViewAllowUseOfLogos:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Use game logos'
+    LocKey: LOCHNOptDetailsViewAllowUseOfLogos
+    Description: 'Requires Extra Metadata Loader to supply logo images.'
+    DescriptionLocKey: LOCHNDescDetailsViewAllowUseOfLogos
+    Group: detailsView
+  DetailsViewDisplayGameNameIfLogoVisible:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Show name even when a logo is shown'
+    LocKey: LOCHNOptDetailsViewDisplayGameNameIfLogoVisible
+    Group: detailsView
+  DetailsViewShowHltbDataGrid:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Show HowLongToBeat grid'
+    LocKey: LOCHNOptDetailsViewShowHltbDataGrid
+    Group: detailsView
+  DetailsViewEnablePanelsDropShadowEffect:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Panel drop shadow'
+    LocKey: LOCHNOptDetailsViewEnablePanelsDropShadowEffect
+    Description: 'Adds a shadow behind panels. Slightly more GPU intensive.'
+    DescriptionLocKey: LOCHNDescDetailsViewEnablePanelsDropShadowEffect
+    Group: detailsView
+  DetailsViewLibraryGameShowFavorite:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Show favourite marker in list'
+    LocKey: LOCHNOptDetailsViewLibraryGameShowFavorite
+    Group: detailsView
+  DetailsViewMusicControlVisibility:
+    Type: Visibility
+    Default: 'Visible'
+    Title: 'Playnite Sounds music player'
+    LocKey: LOCHNOptDetailsViewMusicControlVisibility
+    Description: 'Inline music player next to the header buttons. Requires the Playnite Sounds extension.'
+    DescriptionLocKey: LOCHNDescDetailsViewMusicControlVisibility
+    Group: detailsView
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  DetailsViewOverviewHeaderButtonsOpacity:
+    Type: Double
+    Default: '1.0'
+    Title: 'Header button opacity'
+    LocKey: LOCHNOptDetailsViewOverviewHeaderButtonsOpacity
+    Group: detailsView
+    Slider:
+      Min: '0.2'
+      Max: '1'
+      Step: '0.05'
+  DetailsViewCoverCornerRadius:
+    Type: CornerRadius
+    Default: '5'
+    Title: 'Cover corner radius'
+    LocKey: LOCHNOptDetailsViewCoverCornerRadius
+    Group: detailsView
+  GridViewAllowUseOfLogos:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Use game logos'
+    LocKey: LOCHNOptGridViewAllowUseOfLogos
+    Group: gridDetails
+  GridViewDisplayGameNameIfLogoVisible:
+    Type: Boolean
+    Default: 'True'
+    Title: 'Show name even when a logo is shown'
+    LocKey: LOCHNOptGridViewDisplayGameNameIfLogoVisible
+    Group: gridDetails
+  GridViewShowHltbDataGrid:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Show HowLongToBeat grid'
+    LocKey: LOCHNOptGridViewShowHltbDataGrid
+    Group: gridDetails
+  GridViewPlaceDescriptionAtBottom:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Place description at the bottom'
+    LocKey: LOCHNOptGridViewPlaceDescriptionAtBottom
+    Description: 'Legacy switch. The section order group below gives finer control.'
+    DescriptionLocKey: LOCHNDescGridViewPlaceDescriptionAtBottom
+    Group: gridDetails
+  GridViewDetailsIconsVisibility:
+    Type: Visibility
+    Default: 'Visible'
+    Title: 'Detail row icons'
+    LocKey: LOCHNOptGridViewDetailsIconsVisibility
+    Group: gridDetails
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  GridViewMusicControlVisibility:
+    Type: Visibility
+    Default: 'Visible'
+    Title: 'Playnite Sounds music section'
+    LocKey: LOCHNOptGridViewMusicControlVisibility
+    Description: 'Collapsible music player section. Requires the Playnite Sounds extension.'
+    DescriptionLocKey: LOCHNDescGridViewMusicControlVisibility
+    Group: gridDetails
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  GridViewCoverSubtitleVisibility:
+    Type: Visibility
+    Default: 'Collapsed'
+    Title: 'Cover subtitle'
+    LocKey: LOCHNOptGridViewCoverSubtitleVisibility
+    Group: gridCovers
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  GridViewCoverCompStatusSubtitleVisibility:
+    Type: Visibility
+    Default: 'Collapsed'
+    Title: 'Completion status subtitle'
+    LocKey: LOCHNOptGridViewCoverCompStatusSubtitleVisibility
+    Group: gridCovers
+    Choices:
+      - Value: 'Visible'
+        Title: 'Visible'
+        LocKey: LOCHNValVisible
+      - Value: 'Collapsed'
+        Title: 'Hidden (no space)'
+        LocKey: LOCHNValCollapsed
+      - Value: 'Hidden'
+        Title: 'Invisible (keeps space)'
+        LocKey: LOCHNValHidden
+  GridViewCoverDisplayLibraryBanner:
+    Type: Boolean
+    Default: 'True'
+    Title: 'Show library banner'
+    LocKey: LOCHNOptGridViewCoverDisplayLibraryBanner
+    Group: gridCovers
+  GridViewCoverUseRoundedCorners:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Rounded cover corners'
+    LocKey: LOCHNOptGridViewCoverUseRoundedCorners
+    Group: gridCovers
+  GridViewCoverCornerRadius:
+    Type: CornerRadius
+    Default: '5'
+    Title: 'Cover corner radius'
+    LocKey: LOCHNOptGridViewCoverCornerRadius
+    Description: 'Only applies when rounded cover corners are enabled.'
+    DescriptionLocKey: LOCHNDescGridViewCoverCornerRadius
+    Group: gridCovers
+  GridViewCoverDisplayDropShadowEffect:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Cover drop shadow'
+    LocKey: LOCHNOptGridViewCoverDisplayDropShadowEffect
+    Group: gridCovers
+  GridViewCoverZoomOnHover:
+    Type: Boolean
+    Default: 'False'
+    Title: 'Zoom cover on hover'
+    LocKey: LOCHNOptGridViewCoverZoomOnHover
+    Group: gridCovers
+  GridViewEnableCoverShineAnimation:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Cover shine animation'
+    LocKey: LOCHNOptGridViewEnableCoverShineAnimation
+    Group: gridCovers
+  GridViewEnablePlayingGlowBorder:
+    Type: Boolean
+    Default: 'True'
+    Title: 'Glow border while running'
+    LocKey: LOCHNOptGridViewEnablePlayingGlowBorder
+    Group: gridCovers
+  GridViewLibraryGameShowFavorite:
+    Type: Boolean
+    Default: 'true'
+    Title: 'Show favourite marker'
+    LocKey: LOCHNOptGridViewLibraryGameShowFavorite
+    Group: gridCovers
+  GridViewSelectionBorderCornerRadius:
+    Type: CornerRadius
+    Default: '7'
+    Title: 'Selection border corner radius'
+    LocKey: LOCHNOptGridViewSelectionBorderCornerRadius
+    Group: gridCovers
+  GridViewCoverSubtitleBrush:
+    Type: SolidColorBrush
+    Default: '#b7b7b7'
+    Title: 'Subtitle text colour'
+    LocKey: LOCHNOptGridViewCoverSubtitleBrush
+    Group: gridCovers
+  GridViewCoverSubtitleBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#3d4450'
+    Title: 'Subtitle background'
+    LocKey: LOCHNOptGridViewCoverSubtitleBackgroundBrush
+    Group: gridCovers
+  GridViewItemMaskBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#1e1e1e'
+    Title: 'Cover placeholder background'
+    LocKey: LOCHNOptGridViewItemMaskBackgroundBrush
+    Group: gridCovers
+  GridViewSectionOrderDetails:
+    Type: Int32
+    Default: '0'
+    Title: 'Details rows'
+    LocKey: LOCHNOptGridViewSectionOrderDetails
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderVideo:
+    Type: Int32
+    Default: '1'
+    Title: 'Trailer / video'
+    LocKey: LOCHNOptGridViewSectionOrderVideo
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderNotes:
+    Type: Int32
+    Default: '2'
+    Title: 'Play Notes'
+    LocKey: LOCHNOptGridViewSectionOrderNotes
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderDescription:
+    Type: Int32
+    Default: '3'
+    Title: 'Description'
+    LocKey: LOCHNOptGridViewSectionOrderDescription
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderVndb:
+    Type: Int32
+    Default: '4'
+    Title: 'VNDB Nexus'
+    LocKey: LOCHNOptGridViewSectionOrderVndb
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderSuccessStory:
+    Type: Int32
+    Default: '5'
+    Title: 'Achievements'
+    LocKey: LOCHNOptGridViewSectionOrderSuccessStory
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderHowLongToBeat:
+    Type: Int32
+    Default: '6'
+    Title: 'HowLongToBeat'
+    LocKey: LOCHNOptGridViewSectionOrderHowLongToBeat
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderScreenshotsVisualizer:
+    Type: Int32
+    Default: '7'
+    Title: 'Screenshots'
+    LocKey: LOCHNOptGridViewSectionOrderScreenshotsVisualizer
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderGameActivity:
+    Type: Int32
+    Default: '8'
+    Title: 'Game activity'
+    LocKey: LOCHNOptGridViewSectionOrderGameActivity
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderReviewViewer:
+    Type: Int32
+    Default: '9'
+    Title: 'Steam reviews'
+    LocKey: LOCHNOptGridViewSectionOrderReviewViewer
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderNewsViewer:
+    Type: Int32
+    Default: '10'
+    Title: 'News'
+    LocKey: LOCHNOptGridViewSectionOrderNewsViewer
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderCheckDlc:
+    Type: Int32
+    Default: '11'
+    Title: 'DLC'
+    LocKey: LOCHNOptGridViewSectionOrderCheckDlc
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderGameRelations:
+    Type: Int32
+    Default: '12'
+    Title: 'Related games'
+    LocKey: LOCHNOptGridViewSectionOrderGameRelations
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderSteamScreenshots:
+    Type: Int32
+    Default: '13'
+    Title: 'Steam screenshots'
+    LocKey: LOCHNOptGridViewSectionOrderSteamScreenshots
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderWeb:
+    Type: Int32
+    Default: '14'
+    Title: 'Web browser'
+    LocKey: LOCHNOptGridViewSectionOrderWeb
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  GridViewSectionOrderMusic:
+    Type: Int32
+    Default: '15'
+    Title: 'Music player'
+    LocKey: LOCHNOptGridViewSectionOrderMusic
+    Group: sectionOrder
+    Slider:
+      Min: '0'
+      Max: '18'
+      Step: '1'
+  FontFamily:
+    Type: FontFamily
+    Default: 'Trebuchet MS'
+    Title: 'Main font'
+    LocKey: LOCHNOptFontFamily
+    Description: 'Any font installed on your system. For Chinese text try Microsoft YaHei UI or Noto Sans SC.'
+    DescriptionLocKey: LOCHNDescFontFamily
+    Group: typography
+  MonospaceFontFamily:
+    Type: FontFamily
+    Default: 'Consolas'
+    Title: 'Monospace font'
+    LocKey: LOCHNOptMonospaceFontFamily
+    Group: typography
+  FontSizeSmall:
+    Type: Double
+    Default: '12'
+    Title: 'Font size - small'
+    LocKey: LOCHNOptFontSizeSmall
+    Group: typography
+    Slider:
+      Min: '8'
+      Max: '24'
+      Step: '1'
+  FontSize:
+    Type: Double
+    Default: '14'
+    Title: 'Font size - normal'
+    LocKey: LOCHNOptFontSize
+    Group: typography
+    Slider:
+      Min: '9'
+      Max: '28'
+      Step: '1'
+  FontSizeLarge:
+    Type: Double
+    Default: '15'
+    Title: 'Font size - large'
+    LocKey: LOCHNOptFontSizeLarge
+    Group: typography
+    Slider:
+      Min: '10'
+      Max: '32'
+      Step: '1'
+  FontSizeLarger:
+    Type: Double
+    Default: '20'
+    Title: 'Font size - larger'
+    LocKey: LOCHNOptFontSizeLarger
+    Group: typography
+    Slider:
+      Min: '12'
+      Max: '40'
+      Step: '1'
+  FontSizeLargest:
+    Type: Double
+    Default: '29'
+    Title: 'Font size - largest'
+    LocKey: LOCHNOptFontSizeLargest
+    Description: 'Used for the game title in the Details view.'
+    DescriptionLocKey: LOCHNDescFontSizeLargest
+    Group: typography
+    Slider:
+      Min: '16'
+      Max: '64'
+      Step: '1'
+  TextColor:
+    Type: Color
+    Default: '#dfe3e6'
+    Title: 'Text colour'
+    LocKey: LOCHNOptTextColor
+    Group: typography
+  TextColorDarker:
+    Type: Color
+    Default: '#a3a3a3'
+    Title: 'Text colour - secondary'
+    LocKey: LOCHNOptTextColorDarker
+    Group: typography
+  TextColorDark:
+    Type: Color
+    Default: '#FF000000'
+    Title: 'Text colour - on light surfaces'
+    LocKey: LOCHNOptTextColorDark
+    Group: typography
+  GlyphColor:
+    Type: Color
+    Default: '#1a9fff'
+    Title: 'Accent colour'
+    LocKey: LOCHNOptGlyphColor
+    Description: 'The primary accent. Most icons, focus rings and highlights derive from it.'
+    DescriptionLocKey: LOCHNDescGlyphColor
+    Group: palette
+  GlyphSubColor:
+    Type: Color
+    Default: '#1E92FF'
+    Title: 'Accent colour - secondary'
+    LocKey: LOCHNOptGlyphSubColor
+    Group: palette
+  HighlightGlyphColor:
+    Type: Color
+    Default: '#8855CDFF'
+    Title: 'Highlight colour'
+    LocKey: LOCHNOptHighlightGlyphColor
+    Description: 'Includes an alpha channel, so semi-transparent values are expected.'
+    DescriptionLocKey: LOCHNDescHighlightGlyphColor
+    Group: palette
+  HoverColor:
+    Type: Color
+    Default: '#247BA0'
+    Title: 'Hover colour'
+    LocKey: LOCHNOptHoverColor
+    Group: palette
+  MainColor:
+    Type: Color
+    Default: '#2C3A67'
+    Title: 'Main colour'
+    LocKey: LOCHNOptMainColor
+    Group: palette
+  MainColorDark:
+    Type: Color
+    Default: '#0D1225'
+    Title: 'Main colour - dark'
+    LocKey: LOCHNOptMainColorDark
+    Group: palette
+  BackgroundToneColor:
+    Type: Color
+    Default: '#2C3A67'
+    Title: 'Background tone'
+    LocKey: LOCHNOptBackgroundToneColor
+    Group: palette
+  GridItemBackgroundColor:
+    Type: Color
+    Default: '#3D4450'
+    Title: 'Grid item background'
+    LocKey: LOCHNOptGridItemBackgroundColor
+    Group: palette
+  WhiteColor:
+    Type: Color
+    Default: '#f5f5f5'
+    Title: 'White'
+    LocKey: LOCHNOptWhiteColor
+    Group: palette
+  PanelSeparatorColor:
+    Type: Color
+    Default: '#17191b'
+    Title: 'Panel separator'
+    LocKey: LOCHNOptPanelSeparatorColor
+    Group: palette
+  WindowPanelSeparatorColor:
+    Type: Color
+    Default: 'Transparent'
+    Title: 'Window panel separator'
+    LocKey: LOCHNOptWindowPanelSeparatorColor
+    Group: palette
+  LibraryDetailsViewBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#24282f'
+    Title: 'Library background'
+    LocKey: LOCHNOptLibraryDetailsViewBackgroundBrush
+    Group: palette
+  FilterPanelViewBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#4c515a'
+    Title: 'Filter panel background'
+    LocKey: LOCHNOptFilterPanelViewBackgroundBrush
+    Group: palette
+  NormalBrush:
+    Type: SolidColorBrush
+    Default: '#5555CDFF'
+    Title: 'Base surface brush'
+    LocKey: LOCHNOptNormalBrush
+    Group: palette
+  NormalBorderBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Base border brush'
+    LocKey: LOCHNOptNormalBorderBrush
+    Group: palette
+  ControlBackgroundColor:
+    Type: Color
+    Default: '#3e4047'
+    Title: 'Control background'
+    LocKey: LOCHNOptControlBackgroundColor
+    Group: controls
+  ControlBackgroundColorDarker:
+    Type: Color
+    Default: '#25272d'
+    Title: 'Control background - darker'
+    LocKey: LOCHNOptControlBackgroundColorDarker
+    Group: controls
+  ControlBackgroundColorDark:
+    Type: Color
+    Default: '#99212124'
+    Title: 'Input background'
+    LocKey: LOCHNOptControlBackgroundColorDark
+    Description: 'Shared by text boxes, combo boxes, sliders and similar inputs. Includes alpha.'
+    DescriptionLocKey: LOCHNDescControlBackgroundColorDark
+    Group: controls
+  ControlBackgroundColorDarkHover:
+    Type: Color
+    Default: '#3e4047'
+    Title: 'Input background (hover)'
+    LocKey: LOCHNOptControlBackgroundColorDarkHover
+    Group: controls
+  ToggleButtonNotCheckedBorderColor:
+    Type: Color
+    Default: '#6f6d70'
+    Title: 'Unchecked toggle border'
+    LocKey: LOCHNOptToggleButtonNotCheckedBorderColor
+    Group: controls
+  PopupBackgroundColor:
+    Type: Color
+    Default: '#171e26'
+    Title: 'Popup background'
+    LocKey: LOCHNOptPopupBackgroundColor
+    Group: controls
+  PopupBorderColor:
+    Type: Color
+    Default: '#3e6184'
+    Title: 'Popup border'
+    LocKey: LOCHNOptPopupBorderColor
+    Group: controls
+  MenusPopupsHoverBrush:
+    Type: SolidColorBrush
+    Default: '#dcdedf'
+    Title: 'Menu item background (hover)'
+    LocKey: LOCHNOptMenusPopupsHoverBrush
+    Group: controls
+  MenusPopupMouseOverForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#3d4450'
+    Title: 'Menu item text (hover)'
+    LocKey: LOCHNOptMenusPopupMouseOverForegroundBrush
+    Group: controls
+  ThumbBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#606774'
+    Title: 'Scrollbar thumb'
+    LocKey: LOCHNOptThumbBackgroundBrush
+    Group: controls
+  ThumbIsMouseOverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#7b8392'
+    Title: 'Scrollbar thumb (hover)'
+    LocKey: LOCHNOptThumbIsMouseOverBackgroundBrush
+    Group: controls
+  ProgressBarBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#212124'
+    Title: 'Progress bar track'
+    LocKey: LOCHNOptProgressBarBackgroundBrush
+    Group: controls
+  TabControlSeparatorBrush:
+    Type: SolidColorBrush
+    Default: '#5555CDFF'
+    Title: 'Tab separator'
+    LocKey: LOCHNOptTabControlSeparatorBrush
+    Group: controls
+  TreeViewBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#2a2d34'
+    Title: 'Tree view background'
+    LocKey: LOCHNOptTreeViewBackgroundBrush
+    Group: controls
+  TreeViewItemForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#b8bcbf'
+    Title: 'Tree view item text'
+    LocKey: LOCHNOptTreeViewItemForegroundBrush
+    Group: controls
+  TreeViewItemMouseOverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#dcdedf'
+    Title: 'Tree view item background (hover)'
+    LocKey: LOCHNOptTreeViewItemMouseOverBackgroundBrush
+    Group: controls
+  TreeViewItemMouseOverForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#3d4450'
+    Title: 'Tree view item text (hover)'
+    LocKey: LOCHNOptTreeViewItemMouseOverForegroundBrush
+    Group: controls
+  TreeViewItemSelectedForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#ffffff'
+    Title: 'Tree view item text (selected)'
+    LocKey: LOCHNOptTreeViewItemSelectedForegroundBrush
+    Group: controls
+  ExpanderExIsMouseOverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#3E4E69'
+    Title: 'Section header background (hover)'
+    LocKey: LOCHNOptExpanderExIsMouseOverBackgroundBrush
+    Group: controls
+  GroupCountBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#41464F'
+    Title: 'Group counter background'
+    LocKey: LOCHNOptGroupCountBackgroundBrush
+    Group: controls
+  OpaqueGrayHighlightBrush:
+    Type: SolidColorBrush
+    Default: '#4c919191'
+    Title: 'Neutral highlight'
+    LocKey: LOCHNOptOpaqueGrayHighlightBrush
+    Group: controls
+  WindowBarButtonForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#778991'
+    Title: 'Window caption buttons'
+    LocKey: LOCHNOptWindowBarButtonForegroundBrush
+    Group: controls
+  GameInfoContainerBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#33000000'
+    Title: 'Info container background'
+    LocKey: LOCHNOptGameInfoContainerBackgroundBrush
+    Group: controls
+  DetailsViewBannerPanelBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#4D000000'
+    Title: 'Banner panel background'
+    LocKey: LOCHNOptDetailsViewBannerPanelBackgroundBrush
+    Group: controls
+  DetailsViewBannerPanelBorderBrush:
+    Type: SolidColorBrush
+    Default: '#4Dffffff'
+    Title: 'Banner panel border'
+    LocKey: LOCHNOptDetailsViewBannerPanelBorderBrush
+    Group: controls
+  DetailsViewOverviewHeaderLabelBrush:
+    Type: SolidColorBrush
+    Default: '#ffffff'
+    Title: 'Header label colour'
+    LocKey: LOCHNOptDetailsViewOverviewHeaderLabelBrush
+    Group: controls
+  DetailsViewOverviewHeaderTextBlockBrush:
+    Type: SolidColorBrush
+    Default: '#ffffff'
+    Title: 'Header text colour'
+    LocKey: LOCHNOptDetailsViewOverviewHeaderTextBlockBrush
+    Group: controls
+  DetailsViewOverviewHeaderButtonsBrush:
+    Type: SolidColorBrush
+    Default: '#DBd3d8e0'
+    Title: 'Header button colour'
+    LocKey: LOCHNOptDetailsViewOverviewHeaderButtonsBrush
+    Group: controls
+  DetailsViewHeaderIconsFillBrush:
+    Type: SolidColorBrush
+    Default: '#969696'
+    Title: 'Header icon fill'
+    LocKey: LOCHNOptDetailsViewHeaderIconsFillBrush
+    Group: controls
+  DetailsViewContainerLabelColor:
+    Type: Color
+    Default: '#808486'
+    Title: 'Field label colour'
+    LocKey: LOCHNOptDetailsViewContainerLabelColor
+    Group: controls
+  DetailsViewContainerTextBrush:
+    Type: SolidColorBrush
+    Default: '#d3d3d3'
+    Title: 'Field value colour'
+    LocKey: LOCHNOptDetailsViewContainerTextBrush
+    Group: controls
+  DetailsViewLinksTextBrush:
+    Type: SolidColorBrush
+    Default: '#52dedede'
+    Title: 'Link chip background'
+    LocKey: LOCHNOptDetailsViewLinksTextBrush
+    Group: controls
+  DetailsViewItemIsSelectedBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#3E4E69'
+    Title: 'List row background (selected)'
+    LocKey: LOCHNOptDetailsViewItemIsSelectedBackgroundBrush
+    Group: controls
+  DetailsViewItemIsMouseOverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#323A4B'
+    Title: 'List row background (hover)'
+    LocKey: LOCHNOptDetailsViewItemIsMouseOverBackgroundBrush
+    Group: controls
+  DetailsViewItemIsMouseOverInstalledBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#586F96'
+    Title: 'List row background (hover, installed)'
+    LocKey: LOCHNOptDetailsViewItemIsMouseOverInstalledBackgroundBrush
+    Group: controls
+  LibraryDetailsViewNotInstalledForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#a3aab9'
+    Title: 'Not installed'
+    LocKey: LOCHNOptLibraryDetailsViewNotInstalledForegroundBrush
+    Group: status
+  LibraryDetailsViewIsLaunchingForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#1a9fff'
+    Title: 'Launching'
+    LocKey: LOCHNOptLibraryDetailsViewIsLaunchingForegroundBrush
+    Group: status
+  LibraryDetailsViewIsRunningForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#adff2f'
+    Title: 'Running'
+    LocKey: LOCHNOptLibraryDetailsViewIsRunningForegroundBrush
+    Group: status
+  MoreButtonInstalledBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#18B14E'
+    Title: 'More button (installed)'
+    LocKey: LOCHNOptMoreButtonInstalledBackgroundBrush
+    Group: status
+  MoreButtonNotInstalledBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#235ECF'
+    Title: 'More button (not installed)'
+    LocKey: LOCHNOptMoreButtonNotInstalledBackgroundBrush
+    Group: status
+  PlayButtonBackgroundColor1:
+    Type: Color
+    Default: '#4FC82F'
+    Title: 'Play button gradient 1'
+    LocKey: LOCHNOptPlayButtonBackgroundColor1
+    Group: status
+  PlayButtonBackgroundColor2:
+    Type: Color
+    Default: '#2BB943'
+    Title: 'Play button gradient 2'
+    LocKey: LOCHNOptPlayButtonBackgroundColor2
+    Group: status
+  PlayButtonBackgroundColor3:
+    Type: Color
+    Default: '#18B14E'
+    Title: 'Play button gradient 3'
+    LocKey: LOCHNOptPlayButtonBackgroundColor3
+    Group: status
+  PlayButtonIsMouseOverBackgroundColor1:
+    Type: Color
+    Default: '#6FD51D'
+    Title: 'Play button gradient 1 (hover)'
+    LocKey: LOCHNOptPlayButtonIsMouseOverBackgroundColor1
+    Group: status
+  PlayButtonIsMouseOverBackgroundColor2:
+    Type: Color
+    Default: '#4AC632'
+    Title: 'Play button gradient 2 (hover)'
+    LocKey: LOCHNOptPlayButtonIsMouseOverBackgroundColor2
+    Group: status
+  PlayButtonIsMouseOverBackgroundColor3:
+    Type: Color
+    Default: '#38BE3C'
+    Title: 'Play button gradient 3 (hover)'
+    LocKey: LOCHNOptPlayButtonIsMouseOverBackgroundColor3
+    Group: status
+  PositiveRatingBrush:
+    Type: SolidColorBrush
+    Default: '#78ffa0'
+    Title: 'Positive rating'
+    LocKey: LOCHNOptPositiveRatingBrush
+    Group: status
+  MixedRatingBrush:
+    Type: SolidColorBrush
+    Default: '#fffca1'
+    Title: 'Mixed rating'
+    LocKey: LOCHNOptMixedRatingBrush
+    Group: status
+  NegativeRatingBrush:
+    Type: SolidColorBrush
+    Default: '#ff6b6b'
+    Title: 'Negative rating'
+    LocKey: LOCHNOptNegativeRatingBrush
+    Group: status
+  WarningBrush:
+    Type: SolidColorBrush
+    Default: '#ff6b6b'
+    Title: 'Warning'
+    LocKey: LOCHNOptWarningBrush
+    Group: status
+  DataChangeNotifColor:
+    Type: Color
+    Default: '#ffa500'
+    Title: 'Unsaved change marker'
+    LocKey: LOCHNOptDataChangeNotifColor
+    Group: status
+  PlayersCountDetailsViewForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#99ffffff'
+    Title: 'Player count (details view)'
+    LocKey: LOCHNOptPlayersCountDetailsViewForegroundBrush
+    Group: status
+  PlayersCountGridViewForegroundBrush:
+    Type: SolidColorBrush
+    Default: '#7cc53f'
+    Title: 'Player count (grid view)'
+    LocKey: LOCHNOptPlayersCountGridViewForegroundBrush
+    Group: status
+  ControlCornerRadius:
+    Type: CornerRadius
+    Default: '3'
+    Title: 'Control corner radius'
+    LocKey: LOCHNOptControlCornerRadius
+    Description: 'Buttons, inputs and most panels. Accepts one value or four (top-left, top-right, bottom-right, bottom-left).'
+    DescriptionLocKey: LOCHNDescControlCornerRadius
+    Group: shape
+  ControlCornerRadiusSmall:
+    Type: CornerRadius
+    Default: '3'
+    Title: 'Control corner radius - small'
+    LocKey: LOCHNOptControlCornerRadiusSmall
+    Group: shape
+  SliderFillCornerRadius:
+    Type: CornerRadius
+    Default: '3,0,0,3'
+    Title: 'Slider fill corner radius'
+    LocKey: LOCHNOptSliderFillCornerRadius
+    Group: shape
+  PopupsHoverBackgroundCornerRadius:
+    Type: CornerRadius
+    Default: '0'
+    Title: 'Menu hover corner radius'
+    LocKey: LOCHNOptPopupsHoverBackgroundCornerRadius
+    Group: shape
+  DetailsViewExtraButtonsCornerRadius:
+    Type: CornerRadius
+    Default: '4'
+    Title: 'Extra button corner radius'
+    LocKey: LOCHNOptDetailsViewExtraButtonsCornerRadius
+    Group: shape
+  GridViewShowGameNameCornerRadius:
+    Type: CornerRadius
+    Default: '0,0,5,5'
+    Title: 'Cover name bar corner radius'
+    LocKey: LOCHNOptGridViewShowGameNameCornerRadius
+    Group: shape
+  GridViewCoverGridBackgroundDisabledCornerRadius:
+    Type: CornerRadius
+    Default: '5,5,0,0'
+    Title: 'Cover backdrop corner radius'
+    LocKey: LOCHNOptGridViewCoverGridBackgroundDisabledCornerRadius
+    Group: shape
+  ControlBorderThickness:
+    Type: Thickness
+    Default: '0'
+    Title: 'Control border thickness'
+    LocKey: LOCHNOptControlBorderThickness
+    Group: shape
+  PopupBorderThickness:
+    Type: Thickness
+    Default: '0'
+    Title: 'Popup border thickness'
+    LocKey: LOCHNOptPopupBorderThickness
+    Group: shape
+  PopupMenuPadding:
+    Type: Thickness
+    Default: '0'
+    Title: 'Popup menu padding'
+    LocKey: LOCHNOptPopupMenuPadding
+    Group: shape
+  EllipseBorderThickness:
+    Type: Double
+    Default: '0'
+    Title: 'Circle border thickness'
+    LocKey: LOCHNOptEllipseBorderThickness
+    Group: shape
+    Slider:
+      Min: '0'
+      Max: '6'
+      Step: '0.5'
+  WebExplorerControlHeight:
+    Type: Double
+    Default: '800'
+    Title: 'Web browser height'
+    LocKey: LOCHNOptWebExplorerControlHeight
+    Description: 'Height of the WebExplorer section in the grid details panel.'
+    DescriptionLocKey: LOCHNDescWebExplorerControlHeight
+    Group: integrations
+    Slider:
+      Min: '400'
+      Max: '1800'
+      Step: '25'
+  MusicSectionHeader:
+    Type: String
+    Default: 'Music'
+    Title: 'Music section title'
+    LocKey: LOCHNOptMusicSectionHeader
+    Description: 'Header text of the Playnite Sounds music section.'
+    DescriptionLocKey: LOCHNDescMusicSectionHeader
+    Group: integrations
+
+Presets:
+  Accent:
+    Name: 'Accent colour'
+    LocKey: LOCHNPresetAccent
+    Description: 'Recolours icons, highlights and focus rings in one click.'
+    DescriptionLocKey: LOCHNPresetDescAccent
+    Presets:
+      Azure:
+        Name: 'Azure'
+        LocKey: LOCHNPresetAccentAzure
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#1a9fff'
+          GlyphSubColor:
+            Type: Color
+            Value: '#1E92FF'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#8855CDFF'
+          HoverColor:
+            Type: Color
+            Value: '#247BA0'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#5555CDFF'
+      Cyan:
+        Name: 'Cyan'
+        LocKey: LOCHNPresetAccentCyan
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#00c8d7'
+          GlyphSubColor:
+            Type: Color
+            Value: '#00b4c4'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#8855E0EA'
+          HoverColor:
+            Type: Color
+            Value: '#128a95'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#5555E0EA'
+      Violet:
+        Name: 'Violet'
+        LocKey: LOCHNPresetAccentViolet
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#9b6cff'
+          GlyphSubColor:
+            Type: Color
+            Value: '#8a5cf0'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88B9A0FF'
+          HoverColor:
+            Type: Color
+            Value: '#6b47b8'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55B9A0FF'
+      Magenta:
+        Name: 'Magenta'
+        LocKey: LOCHNPresetAccentMagenta
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#ff5cc8'
+          GlyphSubColor:
+            Type: Color
+            Value: '#f04ab6'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88FFA0DC'
+          HoverColor:
+            Type: Color
+            Value: '#b83d92'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55FFA0DC'
+      Emerald:
+        Name: 'Emerald'
+        LocKey: LOCHNPresetAccentEmerald
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#2ecc71'
+          GlyphSubColor:
+            Type: Color
+            Value: '#27b263'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88A8F0C4'
+          HoverColor:
+            Type: Color
+            Value: '#1f8a4d'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55A8F0C4'
+      Amber:
+        Name: 'Amber'
+        LocKey: LOCHNPresetAccentAmber
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#ffb300'
+          GlyphSubColor:
+            Type: Color
+            Value: '#f0a300'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88FFD98A'
+          HoverColor:
+            Type: Color
+            Value: '#c98d00'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55FFD98A'
+      Crimson:
+        Name: 'Crimson'
+        LocKey: LOCHNPresetAccentCrimson
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#ff4d4d'
+          GlyphSubColor:
+            Type: Color
+            Value: '#f03c3c'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88FFA0A0'
+          HoverColor:
+            Type: Color
+            Value: '#c43434'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55FFA0A0'
+      Rose:
+        Name: 'Rose'
+        LocKey: LOCHNPresetAccentRose
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#ff7a9c'
+          GlyphSubColor:
+            Type: Color
+            Value: '#f06788'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88FFC0CE'
+          HoverColor:
+            Type: Color
+            Value: '#c45970'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55FFC0CE'
+      Slate:
+        Name: 'Slate'
+        LocKey: LOCHNPresetAccentSlate
+        Constants:
+          GlyphColor:
+            Type: Color
+            Value: '#8fa3bd'
+          GlyphSubColor:
+            Type: Color
+            Value: '#7e91aa'
+          HighlightGlyphColor:
+            Type: Color
+            Value: '#88C3D2E3'
+          HoverColor:
+            Type: Color
+            Value: '#66788c'
+          NormalBrush:
+            Type: SolidColorBrush
+            Value: '#55C3D2E3'
+  Background:
+    Name: 'Window background'
+    LocKey: LOCHNPresetBackground
+    Description: 'Swaps the window background gradients.'
+    DescriptionLocKey: LOCHNPresetDescBackground
+    Presets:
+      Nebula:
+        Name: 'Nebula'
+        LocKey: LOCHNPresetBackgroundNebula
+        Files:
+          - 'Presets/Background/Nebula.xaml'
+      Midnight:
+        Name: 'Midnight'
+        LocKey: LOCHNPresetBackgroundMidnight
+        Files:
+          - 'Presets/Background/Midnight.xaml'
+      Graphite:
+        Name: 'Graphite'
+        LocKey: LOCHNPresetBackgroundGraphite
+        Files:
+          - 'Presets/Background/Graphite.xaml'
+      Ocean:
+        Name: 'Ocean'
+        LocKey: LOCHNPresetBackgroundOcean
+        Files:
+          - 'Presets/Background/Ocean.xaml'
+      Plum:
+        Name: 'Plum'
+        LocKey: LOCHNPresetBackgroundPlum
+        Files:
+          - 'Presets/Background/Plum.xaml'
+      Forest:
+        Name: 'Forest'
+        LocKey: LOCHNPresetBackgroundForest
+        Files:
+          - 'Presets/Background/Forest.xaml'
+  Buttons:
+    Name: 'Button style'
+    LocKey: LOCHNPresetButtons
+    Description: 'Replaces the gradient buttons with flat surfaces.'
+    DescriptionLocKey: LOCHNPresetDescButtons
+    Presets:
+      Accent:
+        Name: 'Follow accent colour'
+        LocKey: LOCHNPresetButtonsAccent
+        Description: 'All buttons use the accent colour, including the play button.'
+        DescriptionLocKey: LOCHNPresetDescButtonsAccent
+        Files:
+          - 'Presets/Buttons/Accent.xaml'
+      Flat:
+        Name: 'Flat'
+        LocKey: LOCHNPresetButtonsFlat
+        Description: 'Keeps the original hues but drops the gradients.'
+        DescriptionLocKey: LOCHNPresetDescButtonsFlat
+        Files:
+          - 'Presets/Buttons/Flat.xaml'
+      Monochrome:
+        Name: 'Monochrome'
+        LocKey: LOCHNPresetButtonsMonochrome
+        Description: 'Neutral grey buttons for a quieter look.'
+        DescriptionLocKey: LOCHNPresetDescButtonsMonochrome
+        Files:
+          - 'Presets/Buttons/Monochrome.xaml'
+  Rounding:
+    Name: 'Corner rounding'
+    LocKey: LOCHNPresetRounding
+    Description: 'Applies a consistent corner radius across the whole theme.'
+    DescriptionLocKey: LOCHNPresetDescRounding
+    Presets:
+      Sharp:
+        Name: 'Sharp'
+        LocKey: LOCHNPresetRoundingSharp
+        Constants:
+          ControlCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          ControlCornerRadiusSmall:
+            Type: CornerRadius
+            Value: '0'
+          SliderFillCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          DetailsViewExtraButtonsCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          GridViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          GridViewCoverGridBackgroundDisabledCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          GridViewShowGameNameCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          GridViewSelectionBorderCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          DetailsViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+          PopupsHoverBackgroundCornerRadius:
+            Type: CornerRadius
+            Value: '0'
+      Rounded:
+        Name: 'Rounded'
+        LocKey: LOCHNPresetRoundingRounded
+        Constants:
+          ControlCornerRadius:
+            Type: CornerRadius
+            Value: '8'
+          ControlCornerRadiusSmall:
+            Type: CornerRadius
+            Value: '6'
+          SliderFillCornerRadius:
+            Type: CornerRadius
+            Value: '8,0,0,8'
+          DetailsViewExtraButtonsCornerRadius:
+            Type: CornerRadius
+            Value: '8'
+          GridViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '10'
+          GridViewCoverGridBackgroundDisabledCornerRadius:
+            Type: CornerRadius
+            Value: '10,10,0,0'
+          GridViewShowGameNameCornerRadius:
+            Type: CornerRadius
+            Value: '0,0,10,10'
+          GridViewSelectionBorderCornerRadius:
+            Type: CornerRadius
+            Value: '12'
+          DetailsViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '10'
+          PopupsHoverBackgroundCornerRadius:
+            Type: CornerRadius
+            Value: '6'
+      Pill:
+        Name: 'Pill'
+        LocKey: LOCHNPresetRoundingPill
+        Constants:
+          ControlCornerRadius:
+            Type: CornerRadius
+            Value: '16'
+          ControlCornerRadiusSmall:
+            Type: CornerRadius
+            Value: '10'
+          SliderFillCornerRadius:
+            Type: CornerRadius
+            Value: '16,0,0,16'
+          DetailsViewExtraButtonsCornerRadius:
+            Type: CornerRadius
+            Value: '14'
+          GridViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '14'
+          GridViewCoverGridBackgroundDisabledCornerRadius:
+            Type: CornerRadius
+            Value: '14,14,0,0'
+          GridViewShowGameNameCornerRadius:
+            Type: CornerRadius
+            Value: '0,0,14,14'
+          GridViewSelectionBorderCornerRadius:
+            Type: CornerRadius
+            Value: '18'
+          DetailsViewCoverCornerRadius:
+            Type: CornerRadius
+            Value: '14'
+          PopupsHoverBackgroundCornerRadius:
+            Type: CornerRadius
+            Value: '10'
+  TypeScale:
+    Name: 'Font scale'
+    LocKey: LOCHNPresetTypeScale
+    Description: 'Scales every font size at once.'
+    DescriptionLocKey: LOCHNPresetDescTypeScale
+    Presets:
+      Compact:
+        Name: 'Compact'
+        LocKey: LOCHNPresetTypeScaleCompact
+        Constants:
+          FontSizeSmall:
+            Type: Double
+            Value: '11'
+          FontSize:
+            Type: Double
+            Value: '12'
+          FontSizeLarge:
+            Type: Double
+            Value: '13'
+          FontSizeLarger:
+            Type: Double
+            Value: '17'
+          FontSizeLargest:
+            Type: Double
+            Value: '24'
+      Large:
+        Name: 'Large'
+        LocKey: LOCHNPresetTypeScaleLarge
+        Constants:
+          FontSizeSmall:
+            Type: Double
+            Value: '13'
+          FontSize:
+            Type: Double
+            Value: '16'
+          FontSizeLarge:
+            Type: Double
+            Value: '17'
+          FontSizeLarger:
+            Type: Double
+            Value: '23'
+          FontSizeLargest:
+            Type: Double
+            Value: '34'
+      Huge:
+        Name: 'Huge'
+        LocKey: LOCHNPresetTypeScaleHuge
+        Constants:
+          FontSizeSmall:
+            Type: Double
+            Value: '14'
+          FontSize:
+            Type: Double
+            Value: '18'
+          FontSizeLarge:
+            Type: Double
+            Value: '20'
+          FontSizeLarger:
+            Type: Double
+            Value: '26'
+          FontSizeLargest:
+            Type: Double
+            Value: '40'
+  Font:
+    Name: 'Font family'
+    LocKey: LOCHNPresetFont
+    Description: 'CJK friendly font sets. The font must already be installed on your system.'
+    DescriptionLocKey: LOCHNPresetDescFont
+    Presets:
+      YaHei:
+        Name: 'Microsoft YaHei UI'
+        LocKey: LOCHNPresetFontYaHei
+        Constants:
+          FontFamily:
+            Type: FontFamily
+            Value: 'Microsoft YaHei UI'
+          MonospaceFontFamily:
+            Type: FontFamily
+            Value: 'Cascadia Mono, Consolas'
+      NotoSansSC:
+        Name: 'Noto Sans SC'
+        LocKey: LOCHNPresetFontNotoSansSC
+        Constants:
+          FontFamily:
+            Type: FontFamily
+            Value: 'Noto Sans SC, Microsoft YaHei UI'
+          MonospaceFontFamily:
+            Type: FontFamily
+            Value: 'Cascadia Mono, Consolas'
+      SegoeUI:
+        Name: 'Segoe UI'
+        LocKey: LOCHNPresetFontSegoeUI
+        Constants:
+          FontFamily:
+            Type: FontFamily
+            Value: 'Segoe UI, Microsoft YaHei UI'
+          MonospaceFontFamily:
+            Type: FontFamily
+            Value: 'Consolas'
+      SourceHanSans:
+        Name: 'Source Han Sans SC'
+        LocKey: LOCHNPresetFontSourceHanSans
+        Constants:
+          FontFamily:
+            Type: FontFamily
+            Value: 'Source Han Sans SC, Noto Sans SC, Microsoft YaHei UI'
+          MonospaceFontFamily:
+            Type: FontFamily
+            Value: 'Consolas'
+  Density:
+    Name: 'Sidebar density'
+    LocKey: LOCHNPresetDensity
+    Description: 'Sidebar icon sizing.'
+    DescriptionLocKey: LOCHNPresetDescDensity
+    Presets:
+      Compact:
+        Name: 'Compact'
+        LocKey: LOCHNPresetDensityCompact
+        Constants:
+          SidebarItemSize:
+            Type: Double
+            Value: '32'
+          SidebarLogoSize:
+            Type: Double
+            Value: '30'
+          SidebarItemOpacity:
+            Type: Double
+            Value: '0.7'
+      Relaxed:
+        Name: 'Relaxed'
+        LocKey: LOCHNPresetDensityRelaxed
+        Constants:
+          SidebarItemSize:
+            Type: Double
+            Value: '52'
+          SidebarLogoSize:
+            Type: Double
+            Value: '48'
+          SidebarItemOpacity:
+            Type: Double
+            Value: '0.8'
+      Touch:
+        Name: 'Touch friendly'
+        LocKey: LOCHNPresetDensityTouch
+        Constants:
+          SidebarItemSize:
+            Type: Double
+            Value: '64'
+          SidebarLogoSize:
+            Type: Double
+            Value: '58'
+          SidebarItemOpacity:
+            Type: Double
+            Value: '0.85'

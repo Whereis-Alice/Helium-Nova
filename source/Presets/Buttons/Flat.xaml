@@ -1,0 +1,16 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Helium Nova button preset: Flat-->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="#2A71D8" />
+    <SolidColorBrush x:Key="ButtonIsMouseOverBackgroundBrush" Color="#3794EA" />
+    <SolidColorBrush x:Key="ContextButtonBackgroundBrush" Color="#2A71D8" />
+    <SolidColorBrush x:Key="ContextButtonIsMouseOverBackgroundBrush" Color="#3794EA" />
+    <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="#2BB943" />
+    <SolidColorBrush x:Key="PlayButtonIsMouseOverBackgroundBrush" Color="#4AC632" />
+    <SolidColorBrush x:Key="MoreButtonInstalledBackgroundBrush" Color="#18B14E" />
+    <SolidColorBrush x:Key="MoreButtonInstalledIsMouseOverBackgroundBrush" Color="#52C92D" />
+    <SolidColorBrush x:Key="MoreButtonNotInstalledBackgroundBrush" Color="#235ECF" />
+    <SolidColorBrush x:Key="MoreButtonNotInstalledIsMouseOverBackgroundBrush" Color="#3a9eee" />
+
+</ResourceDictionary>

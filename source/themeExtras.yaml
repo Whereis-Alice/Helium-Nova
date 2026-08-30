@@ -1,0 +1,8 @@
+ThemeId: 9c003378-5914-4a67-aa61-469eff798337
+PersistentPaths:
+- Images/Banners
+BannersBySpecIdPath: Images/Banners/PlatformSpecId
+BannersByPlatformNamePath: Images/Banners/PlatformName
+BannersByPluginIdPath: Images/Banners/PluginId
+BannersBySourceNamePath: Images/Banners/SourceName
+DefaultBannerPath: Images/Banners/UnknownLibrary.png

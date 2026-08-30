@@ -1,0 +1,14 @@
+﻿AddonId: 9c003378-5914-4a67-aa61-469eff798337
+Packages:
+  - Version: 1.0.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2026-08-30
+    PackageUrl: https://github.com/Whereis-Alice/Helium-Nova/releases/download/1.0.0/9c003378-5914-4a67-aa61-469eff798337_1_0_0.pthm
+    Changelog:
+      - Initial release, based on Helium 1.71 by darklinkpower
+      - Full Theme Forge integration: 12 option groups, 152 declared options, 7 preset groups (31 presets)
+      - English and Simplified Chinese theme option localization
+      - Playnite Sounds Mod music player in Details view and Grid view
+      - Resizable sidebar buttons and main menu logo with visibility toggle
+      - Backwards compatible thememodifier.yaml kept for the legacy plugin
+      - Declares recommended add-ons through extensions.yaml

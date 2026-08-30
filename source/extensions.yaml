@@ -1,0 +1,58 @@
+# Helium Nova - optional extension integrations.
+#
+# Read by the Theme Forge plugin to show a short "missing add-on" hint in its settings.
+# Nothing here is a hard dependency: every listed extension only lights up an extra
+# section, badge or control, and the theme renders correctly without any of them.
+# Ids were taken from the official Playnite addon database, not guessed.
+
+Required: []
+
+Recommended:
+- felixkmh_Extras_Plugin    # 封面横幅 / 额外元数据控件
+- ExtraMetadataLoader_705fdbca-e1fc-4004-b839-1d040b8b4429    # 游戏 Logo 与预告片视频
+- playnite-backgroundchanger-plugin    # 备用背景图与背景轮播
+- playnite-gameactivity-plugin    # 游玩时长统计图表
+- playnite-successstory-plugin    # 成就展示
+- playnite-howlongtobeat-plugin    # 通关时长数据
+- playnite-screenshotsvisualizer-plugin    # 本地截图画廊
+- felixkmh_DuplicateHider_Plugin    # 重复条目合并与平台图标
+- playnite-librarymanagement-plugin    # 特性图标
+- NewsViewer_15e03ffe-90f6-4e8e-bd4d-94514777481d    # Steam 新闻与在线人数
+- Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1    # Steam 评测
+- SteamScreenshots_8e77fe31-5e62-41e2-8fa2-64844cfd5b6b    # 商店截图
+- ThemesDetailsViewToGridViewConverter_ef8a7226-eedc-478d-a506-92ee6c088aa3    # 在网格视图中使用详情视图布局
+- Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb    # 内置音乐播放控件
+- VNDBNexus_39229206-1199-4fee-a014-e8478ea4cd77    # 视觉小说标签与评分
+- PlayNotes_4208657d-4f78-42d2-968f-39f24de275e1    # 游戏笔记面板
+- GameRelations_a4c15d63-9ab4-4d96-9a0c-8f9b35d43a1f    # 系列 / 关联作品
+- playnite-checkdlc-plugin    # DLC 拥有状态
+- playnite-checklocalizations-plugin    # 语言支持一览
+- playnite-systemchecker-plugin    # 配置需求对比
+- PlayState    # 游戏挂起 / 恢复
+- WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c    # 内置浏览器侧栏
+- GOGSecondClassGameWatcher_2661ddac-946a-4fee-ba80-3ece762cb64b    # GOG 版本缺失提示
+
+Names:
+  felixkmh_Extras_Plugin: 'ThemeExtras'
+  ExtraMetadataLoader_705fdbca-e1fc-4004-b839-1d040b8b4429: 'Extra Metadata Loader'
+  playnite-backgroundchanger-plugin: 'BackgroundChanger'
+  playnite-gameactivity-plugin: 'GameActivity'
+  playnite-successstory-plugin: 'SuccessStory'
+  playnite-howlongtobeat-plugin: 'HowLongToBeat'
+  playnite-screenshotsvisualizer-plugin: 'ScreenshotsVisualizer'
+  felixkmh_DuplicateHider_Plugin: 'DuplicateHider'
+  playnite-librarymanagement-plugin: 'LibraryManagement'
+  NewsViewer_15e03ffe-90f6-4e8e-bd4d-94514777481d: 'Steam News and Players Viewer'
+  Review_Viewer_ca24e37a-76d9-49bf-89ab-d3cba4a54bd1: 'Steam Reviews Viewer'
+  SteamScreenshots_8e77fe31-5e62-41e2-8fa2-64844cfd5b6b: 'Steam Store Screenshots Viewer'
+  ThemesDetailsViewToGridViewConverter_ef8a7226-eedc-478d-a506-92ee6c088aa3: 'Details to Grid View Converter'
+  Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb: 'Playnite Sounds Mod'
+  VNDBNexus_39229206-1199-4fee-a014-e8478ea4cd77: 'VNDB Nexus'
+  PlayNotes_4208657d-4f78-42d2-968f-39f24de275e1: 'Play Notes'
+  GameRelations_a4c15d63-9ab4-4d96-9a0c-8f9b35d43a1f: 'Game Relations'
+  playnite-checkdlc-plugin: 'CheckDlc'
+  playnite-checklocalizations-plugin: 'CheckLocalizations'
+  playnite-systemchecker-plugin: 'SystemChecker'
+  PlayState: 'PlayState'
+  WebExplorer_181ddd05-2168-4162-a116-b9c2a20c652c: 'Web Explorer'
+  GOGSecondClassGameWatcher_2661ddac-946a-4fee-ba80-3ece762cb64b: 'GOG Second Class Game Watcher'

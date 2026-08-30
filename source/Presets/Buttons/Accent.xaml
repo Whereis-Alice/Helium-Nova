@@ -1,0 +1,16 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Helium Nova button preset: Accent-->
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="ButtonIsMouseOverBackgroundBrush" Color="{DynamicResource GlyphSubColor}" />
+    <SolidColorBrush x:Key="ContextButtonBackgroundBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="ContextButtonIsMouseOverBackgroundBrush" Color="{DynamicResource GlyphSubColor}" />
+    <SolidColorBrush x:Key="PlayButtonBackgroundBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="PlayButtonIsMouseOverBackgroundBrush" Color="{DynamicResource GlyphSubColor}" />
+    <SolidColorBrush x:Key="MoreButtonInstalledBackgroundBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="MoreButtonInstalledIsMouseOverBackgroundBrush" Color="{DynamicResource GlyphSubColor}" />
+    <SolidColorBrush x:Key="MoreButtonNotInstalledBackgroundBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="MoreButtonNotInstalledIsMouseOverBackgroundBrush" Color="{DynamicResource GlyphSubColor}" />
+
+</ResourceDictionary>
