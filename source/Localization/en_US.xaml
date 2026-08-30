@@ -224,7 +224,7 @@
     <sys:String x:Key="LOCHNPresetDensityCompact">Compact</sys:String>
     <sys:String x:Key="LOCHNPresetDensityRelaxed">Relaxed</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">Touch friendly</sys:String>
-    <sys:String x:Key="LOCHNPresetDescAccent">Recolours icons, highlights and focus rings in one click.</sys:String>
+    <sys:String x:Key="LOCHNPresetDescAccent">Recolours glyphs, highlights, gradient buttons, progress bars, menu hover, cover placeholders and the window border in one click.</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">Swaps the window background gradients.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">Replaces the gradient buttons with flat surfaces.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">All buttons use the accent colour, including the play button.</sys:String>

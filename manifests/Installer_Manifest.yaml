@@ -1,5 +1,14 @@
 ﻿AddonId: 9c003378-5914-4a67-aa61-469eff798337
 Packages:
+  - Version: 1.1.0
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2026-08-30
+    PackageUrl: https://github.com/Whereis-Alice/Helium-Nova/releases/download/1.1.0/9c003378-5914-4a67-aa61-469eff798337_1_1_0.pthm
+    Changelog:
+      - Accent presets now recolour the whole accent surface instead of only five glyph keys
+      - Gradient buttons, context buttons, progress bar, cover placeholders, menu hover, window border, popup border and tooltip tint all follow the accent
+      - The nine accent presets moved from inline constants to dedicated resource dictionaries in Presets/Accent
+      - Azure is now a lossless restatement of the original Helium palette so switching back is exact
   - Version: 1.0.0
     RequiredApiVersion: 2.8.0
     ReleaseDate: 2026-08-30

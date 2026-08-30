@@ -51,7 +51,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 
 | 预设组 | 选项 |
 |---|---|
-| 强调色 | Azure / Cyan / Violet / Magenta / Emerald / Amber / Crimson / Rose / Slate |
+| 强调色 | Azure / Cyan / Violet / Magenta / Emerald / Amber / Crimson / Rose / Slate（每套重绘图标、高亮、渐变按钮、进度条、封面占位、菜单悬停、窗口边框与弹窗色调）|
 | 背景 | Nebula / Midnight / Graphite / Ocean / Plum / Forest（渐变背景，含线性与径向） |
 | 按钮 | Accent / Flat / Monochrome |
 | 圆角 | Sharp / Rounded / Pill |
@@ -66,7 +66,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - 主题 Id / 名称 / 作者 / 仓库链接全部换新，可与原版 Helium 并存安装，互不覆盖。
 - `Constants.xaml` 里补注释说明 `ControlCornerRadiusValue` 因为经由 `StaticResource` 传递而无法热更新，改为暴露它派生出的各个 `CornerRadius` 键。
 - 不再暴露上游已无任何引用的死常量（如 `SidebarItemPadding`）。
-- 全部 99 个 xaml、152 个变量 key、253 组双语本地化串、9 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
+- 全部 108 个 xaml、152 个变量 key、253 组双语本地化串、18 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
 
 ---
 

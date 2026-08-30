@@ -224,7 +224,7 @@
     <sys:String x:Key="LOCHNPresetDensityCompact">紧凑</sys:String>
     <sys:String x:Key="LOCHNPresetDensityRelaxed">宽松</sys:String>
     <sys:String x:Key="LOCHNPresetDensityTouch">触屏友好</sys:String>
-    <sys:String x:Key="LOCHNPresetDescAccent">一键重新配色图标、高亮与焦点框。</sys:String>
+    <sys:String x:Key="LOCHNPresetDescAccent">一键重新配色：图标、高亮、渐变按钮、进度条、菜单悬停、封面占位与窗口边框。</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackground">替换窗口背景渐变。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">将渐变按钮替换为纯色按钮。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">所有按钮（含开始按钮）都使用强调色。</sys:String>

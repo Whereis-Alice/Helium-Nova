@@ -1236,180 +1236,54 @@ Presets:
   Accent:
     Name: 'Accent colour'
     LocKey: LOCHNPresetAccent
-    Description: 'Recolours icons, highlights and focus rings in one click.'
+    Description: 'Recolours glyphs, highlights, gradient buttons, progress bars, menu hover, cover placeholders and the window border in one click.'
     DescriptionLocKey: LOCHNPresetDescAccent
     Presets:
       Azure:
         Name: 'Azure'
         LocKey: LOCHNPresetAccentAzure
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#1a9fff'
-          GlyphSubColor:
-            Type: Color
-            Value: '#1E92FF'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#8855CDFF'
-          HoverColor:
-            Type: Color
-            Value: '#247BA0'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#5555CDFF'
+        Files:
+          - 'Presets/Accent/Azure.xaml'
       Cyan:
         Name: 'Cyan'
         LocKey: LOCHNPresetAccentCyan
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#00c8d7'
-          GlyphSubColor:
-            Type: Color
-            Value: '#00b4c4'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#8855E0EA'
-          HoverColor:
-            Type: Color
-            Value: '#128a95'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#5555E0EA'
+        Files:
+          - 'Presets/Accent/Cyan.xaml'
       Violet:
         Name: 'Violet'
         LocKey: LOCHNPresetAccentViolet
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#9b6cff'
-          GlyphSubColor:
-            Type: Color
-            Value: '#8a5cf0'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88B9A0FF'
-          HoverColor:
-            Type: Color
-            Value: '#6b47b8'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55B9A0FF'
+        Files:
+          - 'Presets/Accent/Violet.xaml'
       Magenta:
         Name: 'Magenta'
         LocKey: LOCHNPresetAccentMagenta
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#ff5cc8'
-          GlyphSubColor:
-            Type: Color
-            Value: '#f04ab6'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88FFA0DC'
-          HoverColor:
-            Type: Color
-            Value: '#b83d92'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55FFA0DC'
+        Files:
+          - 'Presets/Accent/Magenta.xaml'
       Emerald:
         Name: 'Emerald'
         LocKey: LOCHNPresetAccentEmerald
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#2ecc71'
-          GlyphSubColor:
-            Type: Color
-            Value: '#27b263'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88A8F0C4'
-          HoverColor:
-            Type: Color
-            Value: '#1f8a4d'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55A8F0C4'
+        Files:
+          - 'Presets/Accent/Emerald.xaml'
       Amber:
         Name: 'Amber'
         LocKey: LOCHNPresetAccentAmber
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#ffb300'
-          GlyphSubColor:
-            Type: Color
-            Value: '#f0a300'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88FFD98A'
-          HoverColor:
-            Type: Color
-            Value: '#c98d00'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55FFD98A'
+        Files:
+          - 'Presets/Accent/Amber.xaml'
       Crimson:
         Name: 'Crimson'
         LocKey: LOCHNPresetAccentCrimson
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#ff4d4d'
-          GlyphSubColor:
-            Type: Color
-            Value: '#f03c3c'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88FFA0A0'
-          HoverColor:
-            Type: Color
-            Value: '#c43434'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55FFA0A0'
+        Files:
+          - 'Presets/Accent/Crimson.xaml'
       Rose:
         Name: 'Rose'
         LocKey: LOCHNPresetAccentRose
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#ff7a9c'
-          GlyphSubColor:
-            Type: Color
-            Value: '#f06788'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88FFC0CE'
-          HoverColor:
-            Type: Color
-            Value: '#c45970'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55FFC0CE'
+        Files:
+          - 'Presets/Accent/Rose.xaml'
       Slate:
         Name: 'Slate'
         LocKey: LOCHNPresetAccentSlate
-        Constants:
-          GlyphColor:
-            Type: Color
-            Value: '#8fa3bd'
-          GlyphSubColor:
-            Type: Color
-            Value: '#7e91aa'
-          HighlightGlyphColor:
-            Type: Color
-            Value: '#88C3D2E3'
-          HoverColor:
-            Type: Color
-            Value: '#66788c'
-          NormalBrush:
-            Type: SolidColorBrush
-            Value: '#55C3D2E3'
+        Files:
+          - 'Presets/Accent/Slate.xaml'
   Background:
     Name: 'Window background'
     LocKey: LOCHNPresetBackground

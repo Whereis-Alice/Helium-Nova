@@ -1,0 +1,83 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--Helium Nova accent preset: Rose / 强调色预设：樱粉-->
+    <!--Core colours are hand tuned. Every other key is hue rotated from the Helium 1.71 Azure-->
+    <!--baseline (hue 205.2, sat 1.000) to hue 344.7 with saturation factor 1.000.-->
+    <!--核心色为手调，其余色由 Helium 原生蓝色基准按色相旋转生成。-->
+
+    <!--region Core accent colours / 核心强调色-->
+    <Color x:Key="GlyphColor">#ff7a9c</Color>
+    <Color x:Key="GlyphSubColor">#f06788</Color>
+    <Color x:Key="HighlightGlyphColor">#88FFC0CE</Color>
+    <Color x:Key="HoverColor">#c45970</Color>
+    <!--region end-->
+
+    <!--region Tinted surface colours / 色调表面色-->
+    <Color x:Key="MainColor">#672C3B</Color>
+    <Color x:Key="BackgroundToneColor">#672C3B</Color>
+    <Color x:Key="PopupBorderColor">#843E50</Color>
+    <!--region end-->
+
+    <!--region Solid accent brushes / 强调纯色笔刷-->
+    <SolidColorBrush x:Key="NormalBrush" Color="#55FFC0CE" />
+    <SolidColorBrush x:Key="TabControlSeparatorBrush" Color="#55FFC0CE" />
+    <SolidColorBrush x:Key="LibraryDetailsViewIsLaunchingForegroundBrush" Color="#ff7a9c" />
+    <SolidColorBrush x:Key="MoreButtonNotInstalledBackgroundBrush" Color="#CF234F" />
+    <SolidColorBrush x:Key="ExpanderExIsMouseOverBackgroundBrush" Color="#693E49" />
+    <SolidColorBrush x:Key="DetailsViewItemIsSelectedBackgroundBrush" Color="#693E49" />
+    <SolidColorBrush x:Key="DetailsViewItemIsMouseOverInstalledBackgroundBrush" Color="#965868" />
+    <!--region end-->
+
+    <!--region Gradient accent brushes / 强调渐变笔刷-->
+    <LinearGradientBrush x:Key="ButtonBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#EC3967" Offset="0"/>
+        <GradientStop Color="#D82A56" Offset="0.75"/>
+        <GradientStop Color="#CF234F" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ButtonIsMouseOverBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#FE4776" Offset="0"/>
+        <GradientStop Color="#EA3765" Offset="0.75"/>
+        <GradientStop Color="#E0305D" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ContextButtonBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#EC3967" Offset="0"/>
+        <GradientStop Color="#D82A56" Offset="0.75"/>
+        <GradientStop Color="#CF234F" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ContextButtonIsMouseOverBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#FE4776" Offset="0"/>
+        <GradientStop Color="#EA3765" Offset="0.75"/>
+        <GradientStop Color="#E0305D" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="MoreButtonNotInstalledIsMouseOverBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#FB4876" Offset="0"/>
+        <GradientStop Color="#EE3A68" Offset="0.50"/>
+        <GradientStop Color="#E3325F" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="GridItemBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#C30435" Offset="0"/>
+        <GradientStop Color="#BB2148" Offset="0.5"/>
+        <GradientStop Color="#B52E51" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ProgressBarBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#B52E51" Offset="0"/>
+        <GradientStop Color="#BB2148" Offset="0.5"/>
+        <GradientStop Color="#C30435" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="StandardWindowBorderBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#FF0041" Offset="0"/>
+        <GradientStop Color="#FF3367" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ControlsIconsGlyphBrush" MappingMode="RelativeToBoundingBox" StartPoint="0.0, 0.0" EndPoint="1.0, 1.0">
+        <GradientStop Color="#FF0041" Offset="0"/>
+        <GradientStop Color="#FF2D63" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="MenusHoverBrush" StartPoint="0.0, 0.5" EndPoint="1.0, 0.5">
+        <GradientStop Color="#723B49" Offset="0"/>
+        <GradientStop Color="#703B49" Offset="0.5"/>
+        <GradientStop Color="#6A3744" Offset="1"/>
+    </LinearGradientBrush>
+    <!--region end-->
+
+</ResourceDictionary>
