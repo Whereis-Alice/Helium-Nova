@@ -240,7 +240,7 @@
     <sys:String x:Key="LOCHNPresetDensityTouch">Touch friendly</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">Recolours glyphs, highlights, gradient buttons, progress bars, menu hover, cover placeholders and the window border in one click.</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackdrop">Dims the Details view artwork so the info panels stay readable over bright covers. Nova extends this below the header: the info section gets its own scrim, so the description, links and custom fields are covered too. &quot;Gradient scrim&quot; keeps the key art bright at the top, darkens it towards the text, calms the blurred backdrop and strengthens the glass panels.</sys:String>
-    <sys:String x:Key="LOCHNPresetDescBackground">Swaps the window background gradients.</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackground">Recolours the whole UI surface: window gradients plus the top panel, sidebar, game list, list group headers, menus and controls. Lightness is preserved, so text contrast is unchanged.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">Replaces the gradient buttons with flat surfaces.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">All buttons use the accent colour, including the play button.</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsFlat">Keeps the original hues but drops the gradients.</sys:String>

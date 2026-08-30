@@ -17,4 +17,51 @@
         <GradientStop Color="#2a2029" Offset="1.1" />
     </RadialGradientBrush>
 
+    <!--Surface chrome: the keys that actually paint the top panel, sidebar, game list,
+        list group headers, menus and controls. Hue-rotated to 288.0 deg with
+        lightness preserved, so text contrast is unchanged.-->
+    <Color x:Key="PopupBackgroundColor">#251429</Color>
+    <Color x:Key="GridItemBackgroundColor">#4F3954</Color>
+    <Color x:Key="PanelSeparatorColor">#1B151D</Color>
+    <Color x:Key="ControlBackgroundColor">#48394C</Color>
+    <Color x:Key="ControlBackgroundColorDarker">#2D232F</Color>
+    <Color x:Key="ControlBackgroundColorDark">#99261D28</Color>
+    <Color x:Key="ControlBackgroundColorDarkHover">#48394C</Color>
+
+    <SolidColorBrush x:Key="TopPanelBackgroundBrush" Color="#241428" />
+    <SolidColorBrush x:Key="LibraryDetailsViewBackgroundBrush" Color="#2E2231" />
+    <SolidColorBrush x:Key="TopPanelSearchBoxBackgroundBrush" Color="#322735" />
+    <SolidColorBrush x:Key="TreeViewBackgroundBrush" Color="#332836" />
+    <SolidColorBrush x:Key="FilterPanelViewBackgroundBrush" Color="#5A475F" />
+    <SolidColorBrush x:Key="GroupCountBackgroundBrush" Color="#4E3E52" />
+    <SolidColorBrush x:Key="GridViewCoverSubtitleBackgroundBrush" Color="#4F3954" />
+    <SolidColorBrush x:Key="ProgressBarBackgroundBrush" Color="#261D28" />
+    <SolidColorBrush x:Key="ThumbBackgroundBrush" Color="#735B79" />
+    <SolidColorBrush x:Key="ThumbIsMouseOverBackgroundBrush" Color="#917598" />
+    <SolidColorBrush x:Key="DetailsViewItemIsMouseOverBackgroundBrush" Color="#492C51" />
+
+    <LinearGradientBrush x:Key="ExpanderExBackgroundBrush" StartPoint="0, 0.5" EndPoint="1.0, 0.5">
+        <GradientStop Color="#3A253F" Offset="0.4" />
+        <GradientStop Color="#332337" Offset="0.75" />
+        <GradientStop Color="#2E2231" Offset="1.0" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="MenuBackgroundBrush" StartPoint="0.0, 0.0" EndPoint="1.0, 0.0">
+        <GradientStop Color="#624D67" Offset="0" />
+        <GradientStop Color="#624D67" Offset="0.5" />
+        <GradientStop Color="#715977" Offset="1" />
+    </LinearGradientBrush>
+
+    <RadialGradientBrush x:Key="PopupBackgroundBrush" GradientOrigin="0.5,0.0" Center="0.5,0.0" RadiusX="1" RadiusY="1">
+        <GradientStop Color="#47384B" Offset="0.0" />
+        <GradientStop Color="#47384B" Offset="0.5" />
+        <GradientStop Color="#3D3040" Offset="1.0" />
+    </RadialGradientBrush>
+
+    <LinearGradientBrush x:Key="TrayContextMenuBackgroundBrush1" StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+        <GradientStop Color="#241C26" Offset="0" />
+        <GradientStop Color="#241C26" Offset="0.5" />
+        <GradientStop Color="#241C26" Offset="1" />
+    </LinearGradientBrush>
+    <!--Surface chrome end-->
 </ResourceDictionary>

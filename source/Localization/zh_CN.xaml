@@ -240,7 +240,7 @@
     <sys:String x:Key="LOCHNPresetDensityTouch">触屏友好</sys:String>
     <sys:String x:Key="LOCHNPresetDescAccent">一键重新配色：图标、高亮、渐变按钮、进度条、菜单悬停、封面占位与窗口边框。</sys:String>
     <sys:String x:Key="LOCHNPresetDescBackdrop">压暗详情页的游戏背景图，让信息面板在明亮封面上依然清晰可读。Nova 把压暗范围延伸到主视觉下方：信息区拥有独立遮罩，简介、链接和自定义字段一并覆盖。「渐变遮罩」保留上方主视觉的亮度，向文字方向逐渐加深，同时降低背景虚化的干扰并加强毛玻璃面板。</sys:String>
-    <sys:String x:Key="LOCHNPresetDescBackground">替换窗口背景渐变。</sys:String>
+    <sys:String x:Key="LOCHNPresetDescBackground">重新着色整个界面底色：窗口渐变，以及顶栏、侧边栏、游戏列表、列表分组标题、菜单和各类控件。明度保持不变，因此文字对比度不受影响。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtons">将渐变按钮替换为纯色按钮。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsAccent">所有按钮（含开始按钮）都使用强调色。</sys:String>
     <sys:String x:Key="LOCHNPresetDescButtonsFlat">保留原有色调，去掉渐变。</sys:String>

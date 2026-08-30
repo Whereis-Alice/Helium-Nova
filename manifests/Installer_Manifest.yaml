@@ -1,5 +1,13 @@
 ﻿AddonId: 9c003378-5914-4a67-aa61-469eff798337
 Packages:
+  - Version: 1.2.3
+    RequiredApiVersion: 2.8.0
+    ReleaseDate: 2026-08-31
+    PackageUrl: https://github.com/Whereis-Alice/Helium-Nova/releases/download/1.2.3/9c003378-5914-4a67-aa61-469eff798337_1_2_3.pthm
+    Changelog:
+      - Window background presets now recolour the whole interface instead of only the window gradients
+      - Each preset drives 25 keys: top panel, sidebar, game list, list group headers, menus, filter panel, popups, scrollbars and generic control surfaces
+      - Colours are hue-rotated with lightness preserved, so text contrast is identical to the original theme
   - Version: 1.2.2
     RequiredApiVersion: 2.8.0
     ReleaseDate: 2026-08-30

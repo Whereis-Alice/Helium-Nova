@@ -1327,7 +1327,7 @@ Presets:
   Background:
     Name: 'Window background'
     LocKey: LOCHNPresetBackground
-    Description: 'Swaps the window background gradients.'
+    Description: 'Recolours the whole UI surface: window gradients plus the top panel, sidebar, game list, list group headers, menus and controls. Lightness is preserved so text contrast never changes.'
     DescriptionLocKey: LOCHNPresetDescBackground
     Presets:
       Nebula:
