@@ -498,6 +498,11 @@
                                                         </ItemsControl.ItemTemplate>
                                                     </ItemsControl>
                                                 </GridEx>
+
+                                                <!--#region Bangumi Nexus -->
+                                                <ContentControl x:Name="BangumiNexus_NexusSectionControl"
+                                                                Margin="0,10,0,0" />
+                                                <!--#endregion-->
                                             </StackPanel>
                                         </Expander>
                                         

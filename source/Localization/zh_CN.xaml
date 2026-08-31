@@ -3,6 +3,27 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!--Helium Nova option strings, consumed by Theme Forge via LocKey references.-->
+    <sys:String x:Key="LOCHNDescBangumiNexusAccentBrush">链接、标签片和折叠箭头。默认跟随强调色预设。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardBackgroundBrush">角色卡、staff 行与信息行的背景。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardBorderBrush">角色卡与角色资料卡的边框。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardHoverBackgroundBrush">鼠标悬停时的卡片背景。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusChipBackgroundBrush">评分、排名与标签的小片背景。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCornerRadius">卡片、标签片与标题的圆角。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusHeaderFontSize">分区与子分区标题的字号。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusHeaderTextBrush">分区标题与各子分区标题。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusPortraitCornerRadius">角色头像的圆角。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusPortraitWidth">角色头像的宽度（像素），卡片尺寸随之缩放。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleMainBrush">主角的定位标签颜色。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleMinorBrush">客串、闲角的定位标签颜色。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleSideBrush">配角的定位标签颜色。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionBackgroundBrush">整个分区的底色，默认透明。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionHeaderBackgroundBrush">每个可折叠标题行的底色。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionSpacing">各子分区之间的垂直间隔。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSmallFontSize">定位标签、标签片与声优行的字号。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSpoilerOverlayBrush">折叠剧透文字时盖在上面的底板。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSubTextBrush">别名、字段名等次要文字。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusTextBrush">Bangumi Nexus 分区内的主要文字颜色。</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusTextFontSize">姓名、字段与简介的字号。</sys:String>
     <sys:String x:Key="LOCHNDescControlBackgroundColorDark">文本框、下拉框、滑块等输入控件共用，含 Alpha 通道。</sys:String>
     <sys:String x:Key="LOCHNDescControlCornerRadius">按钮、输入框及大部分面板。可填 1 个值或 4 个值（左上、右上、右下、左下）。</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewAllowUseOfLogos">需要 Extra Metadata Loader 提供 Logo 图片。</sys:String>
@@ -27,7 +48,9 @@
     <sys:String x:Key="LOCHNDescSidebarLogoVisibility">打开主菜单的 Playnite 徽标按钮。</sys:String>
     <sys:String x:Key="LOCHNDescTopPanelSearchBoxWidthHelium">搜索框的像素宽度。</sys:String>
     <sys:String x:Key="LOCHNDescWebExplorerControlHeight">网格详情面板中 WebExplorer 板块的高度。</sys:String>
+    <sys:String x:Key="LOCHNGroupBangumi">Bangumi Nexus</sys:String>
     <sys:String x:Key="LOCHNGroupControls">控件与面板</sys:String>
+    <sys:String x:Key="LOCHNGroupDescBangumi">Bangumi Nexus 角色与 staff 分区的配色和尺寸。</sys:String>
     <sys:String x:Key="LOCHNGroupDescControls">按钮、输入框、弹出层与面板底色。</sys:String>
     <sys:String x:Key="LOCHNGroupDescDetailsView">详情视图游戏页面的布局。</sys:String>
     <sys:String x:Key="LOCHNGroupDescGridCovers">网格视图中的封面条目。</sys:String>
@@ -52,6 +75,27 @@
     <sys:String x:Key="LOCHNGroupTopPanel">顶部面板</sys:String>
     <sys:String x:Key="LOCHNGroupTypography">字体排版</sys:String>
     <sys:String x:Key="LOCHNOptBackgroundToneColor">背景色调</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusAccentBrush">强调色</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardBackgroundBrush">卡片背景</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardBorderBrush">卡片描边</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardHoverBackgroundBrush">卡片悬停背景</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusChipBackgroundBrush">标签片背景</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCornerRadius">圆角</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusHeaderFontSize">标题字号</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusHeaderTextBrush">标题文字</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusPortraitCornerRadius">头像圆角</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusPortraitWidth">头像宽度</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleMainBrush">主角颜色</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleMinorBrush">客串与闲角颜色</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleSideBrush">配角颜色</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionBackgroundBrush">分区背景</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionHeaderBackgroundBrush">子分区标题背景</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionSpacing">分区间距</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSmallFontSize">小字号</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSpoilerOverlayBrush">剧透遮罩</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSubTextBrush">次要文字</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusTextBrush">正文文字</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusTextFontSize">正文字号</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColor">控件背景</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColorDark">输入框背景</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColorDarkHover">输入框背景（悬停）</sys:String>

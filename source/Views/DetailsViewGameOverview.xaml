@@ -741,7 +741,12 @@
                                             </Grid>
                                         </Grid>
 
-                                        <Grid Margin="20,10,30,10" Grid.Row="2">
+                                        <!--#region Links + Bangumi Nexus
+                                             The links row and the Bangumi panel share the one grid
+                                             row so neither has to be renumbered when the other is
+                                             hidden. -->
+                                        <StackPanel Grid.Row="2">
+                                        <Grid Margin="20,10,30,10">
                                             <Grid.Style>
                                                 <Style TargetType="Grid">
                                                     <Setter Property="Visibility" Value="Visible" />
@@ -777,6 +782,13 @@
                                                 </ItemsControl.ItemTemplate>
                                             </ItemsControl>
                                         </Grid>
+
+                                            <!-- Collapses itself when the game has no Bangumi data,
+                                                 so unlinked games keep the old spacing. -->
+                                            <ContentControl x:Name="BangumiNexus_NexusSectionControl"
+                                                            Margin="20,0,30,10" />
+                                        </StackPanel>
+                                        <!--#endregion-->
 
                                         <Grid Grid.Row="3" Margin="20,0,30,0">
                                             <Grid.ColumnDefinitions>

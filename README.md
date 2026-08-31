@@ -1,6 +1,6 @@
 # Helium Nova
 
-Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**155 个选项、36 套预设，全部可在设置里带实时预览地调整，中英双语。**
+Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/darklinkpower/Helium) 1.71，为 Playnite 10.5x 重新整理，并与 [Theme Forge](https://github.com/Whereis-Alice/PlayniteThemeForge) 深度集成——**177 个选项、36 套预设，全部可在设置里带实时预览地调整，中英双语。**
 
 ---
 
@@ -27,10 +27,11 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 | 侧边栏 Logo | 主菜单图标尺寸可调（`SidebarLogoSize`）、可整体隐藏（`SidebarLogoVisibility`） |
 | 侧边栏按钮 | 按钮尺寸（`SidebarItemSize`）与未选中态透明度（`SidebarItemOpacity`）可调 |
 | 区块标题文案 | 音乐区块标题可自定义（`MusicSectionHeader`） |
+| 角色 / staff 区块 | 详情视图与网格详情都挂载了 [Bangumi Nexus](https://github.com/Whereis-Alice/BangumiNexus) 的角色立绘墙、声优与 staff 名单、条目信息与标签，配色/字号/立绘尺寸由 21 个主题键驱动 |
 
 这些都走 `DynamicResource`，改完立刻生效，不用重启。
 
-### 可调项：12 组 / 156 项
+### 可调项：13 组 / 177 项
 
 | 分组 | 内容 |
 |---|---|
@@ -46,6 +47,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 | 状态色 | 运行中、已安装、完成状态等语义色 |
 | 形状 | 各级圆角 |
 | 集成 | 各扩展相关区块的显隐 |
+| Bangumi 区块 | Bangumi Nexus 面板的 14 个画刷（正文 / 次要文字 / 标题 / 强调 / 区块底色 / 卡片底色与悬停 / 边框 / 标签 / 主角 · 配角 · 龙套角色色 / 剧透遮罩）、5 个尺寸（标题 / 正文 / 小字字号、立绘宽度、区块间距）与 2 个圆角 |
 
 ### 预设：8 组 / 36 套
 
@@ -70,7 +72,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - 修掉上游一个真正的死键：`DetailsViewCoverCornerRadius` 在 `Constants.xaml` 里定义了（默认 5），但整套 xaml 里没有任何地方引用它，于是详情页封面在任何圆角预设下都保持直角。现在封面用 `OpacityMask` 做真实裁切（WPF 的 `Border.CornerRadius` 不会裁剪子元素），投影边框也跟着同一半径。
 - 修掉自己第一版的设计失误：原来「背景」预设只换了 `WindowBackgourndBrush1` / `WindowBackgourndBrush` / `StandardWindowBackgroundBrush` 三个键，而 Helium 的主界面其实几乎看不到它们（只有 `ControlGalleryView` 和 Playnite 自己的窗口边框会露出来）——顶栏和侧边栏由 `TopPanelBackgroundBrush` 画，游戏列表由 `LibraryDetailsViewBackgroundBrush` 画，列表分组标题由 `ExpanderExBackgroundBrush` 画，备注工具条和右键菜单由 `MenuBackgroundBrush` 画，通用控件由 `ControlBackgroundColor*` 系列画。结果换预设主界面基本没变化。现在 6 套背景预设各自接管 25 个键，整套界面底色一起换；这 25 个键与「强调色」「按钮」预设的键集完全不相交，所以预设合并顺序不会产生竞争。
 - 修掉第二个上游显示缺陷：`DetailsViewBackgroundOverlayBrush` 那层压暗只绑定了页头高度（`DetailsTop.ActualHeight`），启动按钮行以下的简介、链接、自定义字段其实什么遮罩都没有，只能直接压在虚化背景图上，明亮主视觉下文字发灰。现在信息区多了一层独立的 `DetailsViewSectionScrimBrush`（默认透明，行为与原版一致），背景压暗预设会连它一起调。
-- 全部 109 个 xaml、156 个变量 key、268 组双语本地化串、19 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
+- 全部 109 个 xaml、177 个变量 key、312 组双语本地化串、19 个预设文件都经过离线校验工具静态检查，**0 错误 0 警告**。
 
 ---
 
@@ -100,7 +102,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 
 ## 推荐扩展
 
-主题通过 `extensions.yaml` 声明了 23 个推荐扩展；缺哪些会在 Theme Forge 的「扩展」页列出来。全都是**可选**的——没装对应扩展时相关区块自动隐藏，不会留空白。
+主题通过 `extensions.yaml` 声明了 24 个推荐扩展；缺哪些会在 Theme Forge 的「扩展」页列出来。全都是**可选**的——没装对应扩展时相关区块自动隐藏，不会留空白。
 
 主要几个：
 
@@ -108,6 +110,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - **BackgroundChanger** — 背景图
 - **SuccessStory** / **GameActivity** / **HowLongToBeat** / **ScreenshotsVisualizer** — 详情区块
 - **VNDB Nexus** — 视觉小说信息区块
+- **Bangumi Nexus** — 角色介绍与 staff 列表（本主题新增的集成点）
 - **Playnite Sounds Mod** — 音乐播放器（本主题新增的集成点）
 - **Web Explorer** — 内嵌网页区块
 - **Steam News / Reviews / Store Screenshots Viewer** — Steam 相关区块

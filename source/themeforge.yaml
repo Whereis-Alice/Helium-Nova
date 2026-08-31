@@ -75,6 +75,12 @@ Groups:
     Description: 'Sections contributed by other extensions.'
     DescriptionLocKey: LOCHNGroupDescIntegrations
     Order: 120
+  - Id: bangumi
+    Title: 'Bangumi Nexus'
+    LocKey: LOCHNGroupBangumi
+    Description: 'Colours and sizing of the Bangumi Nexus character and staff section.'
+    DescriptionLocKey: LOCHNGroupDescBangumi
+    Order: 130
 
 Variables:
   ShowNavigationButtons:
@@ -1271,6 +1277,194 @@ Variables:
     Description: 'Header text of the Playnite Sounds music section.'
     DescriptionLocKey: LOCHNDescMusicSectionHeader
     Group: integrations
+  BangumiNexusTextBrush:
+    Type: SolidColorBrush
+    Default: '#dfe3e6'
+    Title: 'Body text'
+    LocKey: LOCHNOptBangumiNexusTextBrush
+    Description: 'Main text colour inside the Bangumi Nexus section.'
+    DescriptionLocKey: LOCHNDescBangumiNexusTextBrush
+    Group: bangumi
+  BangumiNexusSubTextBrush:
+    Type: SolidColorBrush
+    Default: '#a3a9ad'
+    Title: 'Secondary text'
+    LocKey: LOCHNOptBangumiNexusSubTextBrush
+    Description: 'Aliases, field labels and other secondary text.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSubTextBrush
+    Group: bangumi
+  BangumiNexusHeaderTextBrush:
+    Type: SolidColorBrush
+    Default: '#dfe3e6'
+    Title: 'Header text'
+    LocKey: LOCHNOptBangumiNexusHeaderTextBrush
+    Description: 'The section title and sub-section headers.'
+    DescriptionLocKey: LOCHNDescBangumiNexusHeaderTextBrush
+    Group: bangumi
+  BangumiNexusAccentBrush:
+    Type: SolidColorBrush
+    Default: '#1a9fff'
+    Title: 'Accent'
+    LocKey: LOCHNOptBangumiNexusAccentBrush
+    Description: 'Links, chips and the expand chevron. Follows the accent preset by default.'
+    DescriptionLocKey: LOCHNDescBangumiNexusAccentBrush
+    Group: bangumi
+  BangumiNexusSectionBackgroundBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Section background'
+    LocKey: LOCHNOptBangumiNexusSectionBackgroundBrush
+    Description: 'Surface behind the whole section. Transparent by default.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSectionBackgroundBrush
+    Group: bangumi
+  BangumiNexusSectionHeaderBackgroundBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Sub-section header background'
+    LocKey: LOCHNOptBangumiNexusSectionHeaderBackgroundBrush
+    Description: 'Surface behind each collapsible header row.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSectionHeaderBackgroundBrush
+    Group: bangumi
+  BangumiNexusCardBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#33000000'
+    Title: 'Card background'
+    LocKey: LOCHNOptBangumiNexusCardBackgroundBrush
+    Description: 'Background of character cards, staff rows and info rows.'
+    DescriptionLocKey: LOCHNDescBangumiNexusCardBackgroundBrush
+    Group: bangumi
+  BangumiNexusCardHoverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#59000000'
+    Title: 'Card hover background'
+    LocKey: LOCHNOptBangumiNexusCardHoverBackgroundBrush
+    Description: 'Card background while the pointer is over it.'
+    DescriptionLocKey: LOCHNDescBangumiNexusCardHoverBackgroundBrush
+    Group: bangumi
+  BangumiNexusCardBorderBrush:
+    Type: SolidColorBrush
+    Default: '#1AFFFFFF'
+    Title: 'Card border'
+    LocKey: LOCHNOptBangumiNexusCardBorderBrush
+    Description: 'Outline of character cards and the character detail sheet.'
+    DescriptionLocKey: LOCHNDescBangumiNexusCardBorderBrush
+    Group: bangumi
+  BangumiNexusChipBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#41464F'
+    Title: 'Chip background'
+    LocKey: LOCHNOptBangumiNexusChipBackgroundBrush
+    Description: 'Score, rank and tag chips.'
+    DescriptionLocKey: LOCHNDescBangumiNexusChipBackgroundBrush
+    Group: bangumi
+  BangumiNexusRoleMainBrush:
+    Type: SolidColorBrush
+    Default: '#1a9fff'
+    Title: 'Main character colour'
+    LocKey: LOCHNOptBangumiNexusRoleMainBrush
+    Description: 'Role label of main characters.'
+    DescriptionLocKey: LOCHNDescBangumiNexusRoleMainBrush
+    Group: bangumi
+  BangumiNexusRoleSideBrush:
+    Type: SolidColorBrush
+    Default: '#9AB4D6'
+    Title: 'Supporting character colour'
+    LocKey: LOCHNOptBangumiNexusRoleSideBrush
+    Description: 'Role label of supporting characters.'
+    DescriptionLocKey: LOCHNDescBangumiNexusRoleSideBrush
+    Group: bangumi
+  BangumiNexusRoleMinorBrush:
+    Type: SolidColorBrush
+    Default: '#a3a9ad'
+    Title: 'Minor character colour'
+    LocKey: LOCHNOptBangumiNexusRoleMinorBrush
+    Description: 'Role label of guest and minor characters.'
+    DescriptionLocKey: LOCHNDescBangumiNexusRoleMinorBrush
+    Group: bangumi
+  BangumiNexusSpoilerOverlayBrush:
+    Type: SolidColorBrush
+    Default: '#CC101215'
+    Title: 'Spoiler cover'
+    LocKey: LOCHNOptBangumiNexusSpoilerOverlayBrush
+    Description: 'Plate drawn over folded spoiler text.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSpoilerOverlayBrush
+    Group: bangumi
+  BangumiNexusHeaderFontSize:
+    Type: Double
+    Default: '15'
+    Title: 'Header font size'
+    LocKey: LOCHNOptBangumiNexusHeaderFontSize
+    Description: 'Font size of the section and sub-section titles.'
+    DescriptionLocKey: LOCHNDescBangumiNexusHeaderFontSize
+    Group: bangumi
+    Slider:
+      Min: '10'
+      Max: '24'
+      Step: '1'
+  BangumiNexusTextFontSize:
+    Type: Double
+    Default: '12'
+    Title: 'Body font size'
+    LocKey: LOCHNOptBangumiNexusTextFontSize
+    Description: 'Font size of names, fields and summaries.'
+    DescriptionLocKey: LOCHNDescBangumiNexusTextFontSize
+    Group: bangumi
+    Slider:
+      Min: '9'
+      Max: '20'
+      Step: '1'
+  BangumiNexusSmallFontSize:
+    Type: Double
+    Default: '11'
+    Title: 'Small font size'
+    LocKey: LOCHNOptBangumiNexusSmallFontSize
+    Description: 'Font size of role labels, chips and voice actor lines.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSmallFontSize
+    Group: bangumi
+    Slider:
+      Min: '8'
+      Max: '18'
+      Step: '1'
+  BangumiNexusPortraitWidth:
+    Type: Double
+    Default: '96'
+    Title: 'Portrait width'
+    LocKey: LOCHNOptBangumiNexusPortraitWidth
+    Description: 'Width of character portraits in pixels. Cards scale with it.'
+    DescriptionLocKey: LOCHNDescBangumiNexusPortraitWidth
+    Group: bangumi
+    Slider:
+      Min: '64'
+      Max: '180'
+      Step: '4'
+  BangumiNexusSectionSpacing:
+    Type: Double
+    Default: '10'
+    Title: 'Section spacing'
+    LocKey: LOCHNOptBangumiNexusSectionSpacing
+    Description: 'Vertical gap between the sub-sections.'
+    DescriptionLocKey: LOCHNDescBangumiNexusSectionSpacing
+    Group: bangumi
+    Slider:
+      Min: '0'
+      Max: '32'
+      Step: '2'
+  BangumiNexusCornerRadius:
+    Type: CornerRadius
+    Default: '3'
+    Title: 'Corner radius'
+    LocKey: LOCHNOptBangumiNexusCornerRadius
+    Description: 'Rounding of cards, chips and headers.'
+    DescriptionLocKey: LOCHNDescBangumiNexusCornerRadius
+    Group: bangumi
+  BangumiNexusPortraitCornerRadius:
+    Type: CornerRadius
+    Default: '4'
+    Title: 'Portrait corner radius'
+    LocKey: LOCHNOptBangumiNexusPortraitCornerRadius
+    Description: 'Rounding of character portraits.'
+    DescriptionLocKey: LOCHNDescBangumiNexusPortraitCornerRadius
+    Group: bangumi
 
 Presets:
   Accent:

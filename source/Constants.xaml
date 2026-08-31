@@ -526,4 +526,33 @@
             </Grid>
         </Viewbox>
     </DataTemplate>
+    <!--region Bangumi Nexus-->
+    <!--Surfaces for the Bangumi Nexus character / staff section, mounted after the links
+    row in both game overviews. The plugin publishes its own fallbacks derived from the
+    running theme, but declaring the keys here keeps that section on Nova's palette and
+    makes every one of them editable from Theme Forge.-->
+    <SolidColorBrush x:Key="BangumiNexusTextBrush" Color="{DynamicResource TextColor}" />
+    <SolidColorBrush x:Key="BangumiNexusSubTextBrush" Color="{DynamicResource TextColorDarker}" />
+    <SolidColorBrush x:Key="BangumiNexusHeaderTextBrush" Color="{DynamicResource TextColor}" />
+    <SolidColorBrush x:Key="BangumiNexusAccentBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="BangumiNexusSectionBackgroundBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="BangumiNexusSectionHeaderBackgroundBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="BangumiNexusCardBackgroundBrush" Color="#33000000" />
+    <SolidColorBrush x:Key="BangumiNexusCardHoverBackgroundBrush" Color="#59000000" />
+    <SolidColorBrush x:Key="BangumiNexusCardBorderBrush" Color="#1AFFFFFF" />
+    <SolidColorBrush x:Key="BangumiNexusChipBackgroundBrush" Color="#41464F" />
+    <SolidColorBrush x:Key="BangumiNexusRoleMainBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="BangumiNexusRoleSideBrush" Color="#FF9AB4D6" />
+    <SolidColorBrush x:Key="BangumiNexusRoleMinorBrush" Color="{DynamicResource TextColorDarker}" />
+    <SolidColorBrush x:Key="BangumiNexusSpoilerOverlayBrush" Color="#CC101215" />
+
+    <sys:Double x:Key="BangumiNexusHeaderFontSize">15</sys:Double>
+    <sys:Double x:Key="BangumiNexusTextFontSize">12</sys:Double>
+    <sys:Double x:Key="BangumiNexusSmallFontSize">11</sys:Double>
+    <sys:Double x:Key="BangumiNexusPortraitWidth">96</sys:Double>
+    <sys:Double x:Key="BangumiNexusSectionSpacing">10</sys:Double>
+
+    <CornerRadius x:Key="BangumiNexusCornerRadius">3</CornerRadius>
+    <CornerRadius x:Key="BangumiNexusPortraitCornerRadius">4</CornerRadius>
+    <!--region Bangumi Nexus-->
 </ResourceDictionary>

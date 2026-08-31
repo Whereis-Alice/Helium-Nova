@@ -3,6 +3,27 @@
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <!--Helium Nova option strings, consumed by Theme Forge via LocKey references.-->
+    <sys:String x:Key="LOCHNDescBangumiNexusAccentBrush">Links, chips and the expand chevron. Follows the accent preset by default.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardBackgroundBrush">Background of character cards, staff rows and info rows.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardBorderBrush">Outline of character cards and the character detail sheet.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCardHoverBackgroundBrush">Card background while the pointer is over it.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusChipBackgroundBrush">Score, rank and tag chips.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusCornerRadius">Rounding of cards, chips and headers.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusHeaderFontSize">Font size of the section and sub-section titles.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusHeaderTextBrush">The section title and sub-section headers.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusPortraitCornerRadius">Rounding of character portraits.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusPortraitWidth">Width of character portraits in pixels. Cards scale with it.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleMainBrush">Role label of main characters.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleMinorBrush">Role label of guest and minor characters.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusRoleSideBrush">Role label of supporting characters.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionBackgroundBrush">Surface behind the whole section. Transparent by default.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionHeaderBackgroundBrush">Surface behind each collapsible header row.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSectionSpacing">Vertical gap between the sub-sections.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSmallFontSize">Font size of role labels, chips and voice actor lines.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSpoilerOverlayBrush">Plate drawn over folded spoiler text.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusSubTextBrush">Aliases, field labels and other secondary text.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusTextBrush">Main text colour inside the Bangumi Nexus section.</sys:String>
+    <sys:String x:Key="LOCHNDescBangumiNexusTextFontSize">Font size of names, fields and summaries.</sys:String>
     <sys:String x:Key="LOCHNDescControlBackgroundColorDark">Shared by text boxes, combo boxes, sliders and similar inputs. Includes alpha.</sys:String>
     <sys:String x:Key="LOCHNDescControlCornerRadius">Buttons, inputs and most panels. Accepts one value or four (top-left, top-right, bottom-right, bottom-left).</sys:String>
     <sys:String x:Key="LOCHNDescDetailsViewAllowUseOfLogos">Requires Extra Metadata Loader to supply logo images.</sys:String>
@@ -27,7 +48,9 @@
     <sys:String x:Key="LOCHNDescSidebarLogoVisibility">The Playnite logo button that opens the main menu.</sys:String>
     <sys:String x:Key="LOCHNDescTopPanelSearchBoxWidthHelium">Width of the search box in pixels.</sys:String>
     <sys:String x:Key="LOCHNDescWebExplorerControlHeight">Height of the WebExplorer section in the grid details panel.</sys:String>
+    <sys:String x:Key="LOCHNGroupBangumi">Bangumi Nexus</sys:String>
     <sys:String x:Key="LOCHNGroupControls">Controls &amp; panels</sys:String>
+    <sys:String x:Key="LOCHNGroupDescBangumi">Colours and sizing of the Bangumi Nexus character and staff section.</sys:String>
     <sys:String x:Key="LOCHNGroupDescControls">Buttons, inputs, popups and panel surfaces.</sys:String>
     <sys:String x:Key="LOCHNGroupDescDetailsView">Layout of the Details view game page.</sys:String>
     <sys:String x:Key="LOCHNGroupDescGridCovers">Cover items inside the grid.</sys:String>
@@ -52,6 +75,27 @@
     <sys:String x:Key="LOCHNGroupTopPanel">Top panel</sys:String>
     <sys:String x:Key="LOCHNGroupTypography">Typography</sys:String>
     <sys:String x:Key="LOCHNOptBackgroundToneColor">Background tone</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusAccentBrush">Accent</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardBackgroundBrush">Card background</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardBorderBrush">Card border</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCardHoverBackgroundBrush">Card hover background</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusChipBackgroundBrush">Chip background</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusCornerRadius">Corner radius</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusHeaderFontSize">Header font size</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusHeaderTextBrush">Header text</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusPortraitCornerRadius">Portrait corner radius</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusPortraitWidth">Portrait width</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleMainBrush">Main character colour</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleMinorBrush">Minor character colour</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusRoleSideBrush">Supporting character colour</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionBackgroundBrush">Section background</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionHeaderBackgroundBrush">Sub-section header background</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSectionSpacing">Section spacing</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSmallFontSize">Small font size</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSpoilerOverlayBrush">Spoiler cover</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusSubTextBrush">Secondary text</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusTextBrush">Body text</sys:String>
+    <sys:String x:Key="LOCHNOptBangumiNexusTextFontSize">Body font size</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColor">Control background</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColorDark">Input background</sys:String>
     <sys:String x:Key="LOCHNOptControlBackgroundColorDarkHover">Input background (hover)</sys:String>
