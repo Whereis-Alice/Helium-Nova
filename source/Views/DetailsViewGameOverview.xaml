@@ -787,6 +787,12 @@
                                                  so unlinked games keep the old spacing. -->
                                             <ContentControl x:Name="BangumiNexus_NexusSectionControl"
                                                             Margin="20,0,30,10" />
+                                            <!-- Save Vault: backup status for this game. Hidden from Theme
+                                                 Forge with SaveVaultSectionVisibility for anyone who does not
+                                                 want a backup block on every game page. -->
+                                            <ContentControl x:Name="SaveVault_GameVaultControl"
+                                                            Margin="20,0,30,10"
+                                                            Visibility="{DynamicResource SaveVaultSectionVisibility}" />
                                         </StackPanel>
                                         <!--#endregion-->
 

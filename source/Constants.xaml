@@ -554,5 +554,29 @@
 
     <CornerRadius x:Key="BangumiNexusCornerRadius">3</CornerRadius>
     <CornerRadius x:Key="BangumiNexusPortraitCornerRadius">4</CornerRadius>
-    <!--region Bangumi Nexus-->
+    <!--endregion-->
+    <!--region Save Vault-->
+    <!--Surfaces for the Save Vault panel. Same reasoning as the Bangumi block above: the
+    plugin ships fallbacks derived from the running theme, but declaring the keys here pins
+    the panel to Nova's palette and exposes every one of them in Theme Forge.-->
+    <Visibility x:Key="SaveVaultSectionVisibility">Visible</Visibility>
+    <SolidColorBrush x:Key="SaveVaultTextBrush" Color="{DynamicResource TextColor}" />
+    <SolidColorBrush x:Key="SaveVaultSubTextBrush" Color="{DynamicResource TextColorDarker}" />
+    <SolidColorBrush x:Key="SaveVaultAccentBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="SaveVaultSectionBackgroundBrush" Color="Transparent" />
+    <SolidColorBrush x:Key="SaveVaultCardBackgroundBrush" Color="#33000000" />
+    <SolidColorBrush x:Key="SaveVaultCardHoverBackgroundBrush" Color="#59000000" />
+    <SolidColorBrush x:Key="SaveVaultCardBorderBrush" Color="#1AFFFFFF" />
+    <SolidColorBrush x:Key="SaveVaultChipBackgroundBrush" Color="#41464F" />
+    <SolidColorBrush x:Key="SaveVaultProtectedBrush" Color="#FF63C98A" />
+    <SolidColorBrush x:Key="SaveVaultPendingBrush" Color="#FFFFC14D" />
+    <SolidColorBrush x:Key="SaveVaultUnknownBrush" Color="{DynamicResource TextColorDarker}" />
+
+    <sys:Double x:Key="SaveVaultHeaderFontSize">15</sys:Double>
+    <sys:Double x:Key="SaveVaultTextFontSize">12</sys:Double>
+    <sys:Double x:Key="SaveVaultSmallFontSize">11</sys:Double>
+    <sys:Double x:Key="SaveVaultSectionSpacing">10</sys:Double>
+
+    <CornerRadius x:Key="SaveVaultCornerRadius">3</CornerRadius>
+    <!--endregion-->
 </ResourceDictionary>

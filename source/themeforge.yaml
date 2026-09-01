@@ -81,6 +81,12 @@ Groups:
     Description: 'Colours and sizing of the Bangumi Nexus character and staff section.'
     DescriptionLocKey: LOCHNGroupDescBangumi
     Order: 130
+  - Id: saveVault
+    Title: 'Save Vault'
+    LocKey: LOCHNGroupSaveVault
+    Description: 'Colours and sizing of the Save Vault backup panel.'
+    DescriptionLocKey: LOCHNGroupDescSaveVault
+    Order: 140
 
 Variables:
   ShowNavigationButtons:
@@ -1465,6 +1471,158 @@ Variables:
     Description: 'Rounding of character portraits.'
     DescriptionLocKey: LOCHNDescBangumiNexusPortraitCornerRadius
     Group: bangumi
+  SaveVaultSectionVisibility:
+    Type: Visibility
+    Default: 'Visible'
+    Title: 'Save Vault panel'
+    LocKey: LOCHNOptSaveVaultSectionVisibility
+    Description: 'The save backup panel, mounted under the links row in both game overviews.'
+    DescriptionLocKey: LOCHNDescSaveVaultSectionVisibility
+    Group: saveVault
+  SaveVaultTextBrush:
+    Type: SolidColorBrush
+    Default: '#dfe3e6'
+    Title: 'Body text'
+    LocKey: LOCHNOptSaveVaultTextBrush
+    Description: 'Main text colour inside the Save Vault panel.'
+    DescriptionLocKey: LOCHNDescSaveVaultTextBrush
+    Group: saveVault
+  SaveVaultSubTextBrush:
+    Type: SolidColorBrush
+    Default: '#a3a9ad'
+    Title: 'Secondary text'
+    LocKey: LOCHNOptSaveVaultSubTextBrush
+    Description: 'Paths, timestamps and other secondary text.'
+    DescriptionLocKey: LOCHNDescSaveVaultSubTextBrush
+    Group: saveVault
+  SaveVaultAccentBrush:
+    Type: SolidColorBrush
+    Default: '#1a9fff'
+    Title: 'Accent'
+    LocKey: LOCHNOptSaveVaultAccentBrush
+    Description: 'Action links and the expand chevron. Follows the accent preset by default.'
+    DescriptionLocKey: LOCHNDescSaveVaultAccentBrush
+    Group: saveVault
+  SaveVaultSectionBackgroundBrush:
+    Type: SolidColorBrush
+    Default: 'Transparent'
+    Title: 'Section background'
+    LocKey: LOCHNOptSaveVaultSectionBackgroundBrush
+    Description: 'Surface behind the whole panel. Transparent by default.'
+    DescriptionLocKey: LOCHNDescSaveVaultSectionBackgroundBrush
+    Group: saveVault
+  SaveVaultCardBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#33000000'
+    Title: 'Card background'
+    LocKey: LOCHNOptSaveVaultCardBackgroundBrush
+    Description: 'Background of snapshot rows and save location rows.'
+    DescriptionLocKey: LOCHNDescSaveVaultCardBackgroundBrush
+    Group: saveVault
+  SaveVaultCardHoverBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#59000000'
+    Title: 'Card hover background'
+    LocKey: LOCHNOptSaveVaultCardHoverBackgroundBrush
+    Description: 'Row background while the pointer is over it.'
+    DescriptionLocKey: LOCHNDescSaveVaultCardHoverBackgroundBrush
+    Group: saveVault
+  SaveVaultCardBorderBrush:
+    Type: SolidColorBrush
+    Default: '#1AFFFFFF'
+    Title: 'Card border'
+    LocKey: LOCHNOptSaveVaultCardBorderBrush
+    Description: 'Outline of snapshot and location rows.'
+    DescriptionLocKey: LOCHNDescSaveVaultCardBorderBrush
+    Group: saveVault
+  SaveVaultChipBackgroundBrush:
+    Type: SolidColorBrush
+    Default: '#41464F'
+    Title: 'Chip background'
+    LocKey: LOCHNOptSaveVaultChipBackgroundBrush
+    Description: 'Trigger, size and origin chips.'
+    DescriptionLocKey: LOCHNDescSaveVaultChipBackgroundBrush
+    Group: saveVault
+  SaveVaultProtectedBrush:
+    Type: SolidColorBrush
+    Default: '#63C98A'
+    Title: 'Protected marker'
+    LocKey: LOCHNOptSaveVaultProtectedBrush
+    Description: 'Status dot and text once the game has at least one snapshot.'
+    DescriptionLocKey: LOCHNDescSaveVaultProtectedBrush
+    Group: saveVault
+  SaveVaultPendingBrush:
+    Type: SolidColorBrush
+    Default: '#FFC14D'
+    Title: 'Pending marker'
+    LocKey: LOCHNOptSaveVaultPendingBrush
+    Description: 'Status dot when locations were found but nothing is backed up yet.'
+    DescriptionLocKey: LOCHNDescSaveVaultPendingBrush
+    Group: saveVault
+  SaveVaultUnknownBrush:
+    Type: SolidColorBrush
+    Default: '#a3a9ad'
+    Title: 'Unknown marker'
+    LocKey: LOCHNOptSaveVaultUnknownBrush
+    Description: 'Status dot when no save location is known.'
+    DescriptionLocKey: LOCHNDescSaveVaultUnknownBrush
+    Group: saveVault
+  SaveVaultHeaderFontSize:
+    Type: Double
+    Default: '15'
+    Title: 'Header font size'
+    LocKey: LOCHNOptSaveVaultHeaderFontSize
+    Description: 'Font size of the panel title.'
+    DescriptionLocKey: LOCHNDescSaveVaultHeaderFontSize
+    Group: saveVault
+    Slider:
+      Min: '10'
+      Max: '24'
+      Step: '1'
+  SaveVaultTextFontSize:
+    Type: Double
+    Default: '12'
+    Title: 'Body font size'
+    LocKey: LOCHNOptSaveVaultTextFontSize
+    Description: 'Font size of snapshot rows and status text.'
+    DescriptionLocKey: LOCHNDescSaveVaultTextFontSize
+    Group: saveVault
+    Slider:
+      Min: '9'
+      Max: '20'
+      Step: '1'
+  SaveVaultSmallFontSize:
+    Type: Double
+    Default: '11'
+    Title: 'Small font size'
+    LocKey: LOCHNOptSaveVaultSmallFontSize
+    Description: 'Font size of chips, paths and hints.'
+    DescriptionLocKey: LOCHNDescSaveVaultSmallFontSize
+    Group: saveVault
+    Slider:
+      Min: '8'
+      Max: '18'
+      Step: '1'
+  SaveVaultSectionSpacing:
+    Type: Double
+    Default: '10'
+    Title: 'Section spacing'
+    LocKey: LOCHNOptSaveVaultSectionSpacing
+    Description: 'Vertical gap between the panel''s sub-sections.'
+    DescriptionLocKey: LOCHNDescSaveVaultSectionSpacing
+    Group: saveVault
+    Slider:
+      Min: '0'
+      Max: '32'
+      Step: '2'
+  SaveVaultCornerRadius:
+    Type: CornerRadius
+    Default: '3'
+    Title: 'Corner radius'
+    LocKey: LOCHNOptSaveVaultCornerRadius
+    Description: 'Rounding of rows and chips.'
+    DescriptionLocKey: LOCHNDescSaveVaultCornerRadius
+    Group: saveVault
 
 Presets:
   Accent:

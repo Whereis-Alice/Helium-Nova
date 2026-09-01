@@ -24,6 +24,7 @@ Recommended:
 - Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb    # 内置音乐播放控件
 - VNDBNexus_39229206-1199-4fee-a014-e8478ea4cd77    # 视觉小说标签与评分
 - BangumiNexus_d80ba73b-85c1-477c-8912-138851990182    # 角色介绍与 staff 列表（Bangumi / VNDB）
+- SaveVault_fd085db8-9b7c-4f83-a2df-3f0784eae1d0    # 存档快照备份面板
 - PlayNotes_4208657d-4f78-42d2-968f-39f24de275e1    # 游戏笔记面板
 - GameRelations_a4c15d63-9ab4-4d96-9a0c-8f9b35d43a1f    # 系列 / 关联作品
 - playnite-checkdlc-plugin    # DLC 拥有状态
@@ -50,6 +51,7 @@ Names:
   Playnite.Sounds.Mod.baf1744c-72f6-4bc1-92cc-474403b279fb: 'Playnite Sounds Mod'
   VNDBNexus_39229206-1199-4fee-a014-e8478ea4cd77: 'VNDB Nexus'
   BangumiNexus_d80ba73b-85c1-477c-8912-138851990182: 'Bangumi Nexus'
+  SaveVault_fd085db8-9b7c-4f83-a2df-3f0784eae1d0: 'Save Vault'
   PlayNotes_4208657d-4f78-42d2-968f-39f24de275e1: 'Play Notes'
   GameRelations_a4c15d63-9ab4-4d96-9a0c-8f9b35d43a1f: 'Game Relations'
   playnite-checkdlc-plugin: 'CheckDlc'

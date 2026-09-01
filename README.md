@@ -28,10 +28,11 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 | 侧边栏按钮 | 按钮尺寸（`SidebarItemSize`）与未选中态透明度（`SidebarItemOpacity`）可调 |
 | 区块标题文案 | 音乐区块标题可自定义（`MusicSectionHeader`） |
 | 角色 / staff 区块 | 详情视图与网格详情都挂载了 [Bangumi Nexus](https://github.com/Whereis-Alice/BangumiNexus) 的角色立绘墙、声优与 staff 名单、条目信息与标签，配色/字号/立绘尺寸由 21 个主题键驱动 |
+| 存档备份区块 | 详情视图与网格详情都挂载了 [Save Vault](https://github.com/Whereis-Alice/SaveVault) 的存档面板：已知存档位置、快照列表、备份 / 检测 / 管理按钮，配色与字号由 16 个主题键驱动，可整块隐藏（`SaveVaultSectionVisibility`） |
 
 这些都走 `DynamicResource`，改完立刻生效，不用重启。
 
-### 可调项：13 组 / 177 项
+### 可调项：14 组 / 194 项
 
 | 分组 | 内容 |
 |---|---|
@@ -48,6 +49,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 | 形状 | 各级圆角 |
 | 集成 | 各扩展相关区块的显隐 |
 | Bangumi 区块 | Bangumi Nexus 面板的 14 个画刷（正文 / 次要文字 / 标题 / 强调 / 区块底色 / 卡片底色与悬停 / 边框 / 标签 / 主角 · 配角 · 龙套角色色 / 剧透遮罩）、5 个尺寸（标题 / 正文 / 小字字号、立绘宽度、区块间距）与 2 个圆角 |
+| 存档方舟区块 | Save Vault 面板的 11 个画刷（正文 / 次要文字 / 强调 / 区块底色 / 卡片底色与悬停 / 边框 / 标签 / 已备份 · 待备份 · 未知状态色）、4 个尺寸与 1 个圆角，外加分区显隐开关 |
 
 ### 预设：8 组 / 36 套
 
@@ -102,7 +104,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 
 ## 推荐扩展
 
-主题通过 `extensions.yaml` 声明了 24 个推荐扩展；缺哪些会在 Theme Forge 的「扩展」页列出来。全都是**可选**的——没装对应扩展时相关区块自动隐藏，不会留空白。
+主题通过 `extensions.yaml` 声明了 25 个推荐扩展；缺哪些会在 Theme Forge 的「扩展」页列出来。全都是**可选**的——没装对应扩展时相关区块自动隐藏，不会留空白。
 
 主要几个：
 
@@ -111,6 +113,7 @@ Playnite 桌面模式主题。基于 [darklinkpower/Helium](https://github.com/d
 - **SuccessStory** / **GameActivity** / **HowLongToBeat** / **ScreenshotsVisualizer** — 详情区块
 - **VNDB Nexus** — 视觉小说信息区块
 - **Bangumi Nexus** — 角色介绍与 staff 列表（本主题新增的集成点）
+- **Save Vault** — 存档快照备份面板（本主题新增的集成点）
 - **Playnite Sounds Mod** — 音乐播放器（本主题新增的集成点）
 - **Web Explorer** — 内嵌网页区块
 - **Steam News / Reviews / Store Screenshots Viewer** — Steam 相关区块
